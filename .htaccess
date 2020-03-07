@@ -1,1 +1,1 @@
-RedirectMatch 301 ^/ck/(.*)$ https://discord.gg/FrYNqXp
+Redirect 301 /ck https://discord.gg/FrYNqXp
