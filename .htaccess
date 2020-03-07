@@ -3,5 +3,5 @@ Options +FollowSymLinks -MultiViews
 RewriteEngine On
 RewriteBase /
 
-RewriteCond %{HTTP_HOST} ^(www\.)?mydomain\.com$ [NC]
+RewriteCond %{HTTP_HOST} ^(www\.)?reizu\.moe$ [NC]
 RewriteRule ^ck/?$ https://discord.gg/FrYNqXp [L,R=301,NC]
