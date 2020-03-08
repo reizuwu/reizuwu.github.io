@@ -1,7 +1,0 @@
-Options +FollowSymLinks -MultiViews
-# Turn mod_rewrite on
-RewriteEngine On
-RewriteBase /
-
-RewriteCond %{HTTP_HOST} ^(www\.)?reizu\.moe$ [NC]
-RewriteRule ^ck/?$ https://discord.gg/FrYNqXp [L,R=301,NC]
