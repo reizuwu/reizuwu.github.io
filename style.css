@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Roboto Regular';
-  src: url('fonts/Roboto-Regular.ttf')  format('truetype'); 
+  font-family: 'Regular';
+  src: url('fonts/Product Sans Regular.ttf')  format('truetype'); 
 }
 @font-face {
-  font-family: 'Roboto Bold';
-  src: url('fonts/Roboto-Bold.ttf')  format('truetype'); 
+  font-family: 'Bold';
+  src: url('fonts/Product Sans Bold.ttf')  format('truetype'); 
 }
 
 body {
-	font-family: 'Roboto Regular', sans-serif;
+	font-family: 'Regular', sans-serif;
 	background: linear-gradient(
           rgba(0, 0, 0, 0), 
           rgba(0, 0, 0, 0)
@@ -18,7 +18,7 @@ body {
     background-size: 100% auto;
     background-position: center top;
     background-attachment: fixed;
-	background-color: #afcfff;
+	background-color: #afdfff;
 	color: #000000;
 	font-size: 20px;
 }
@@ -28,24 +28,18 @@ a, a:hover, a:focus, a:active, a:visited {
 	color: #000;
 }
 
+.image {
+	margin-top: 80px;
+	border-radius: 50%;
+}
+
 h1.hello {
-	margin-top: 270px;
+	margin-top: 20px;
 }
 
 h1.hello, h1.timing {
-	margin-bottom: 85px;
+	margin-bottom: 50px;
 	font-size: 3.2rem;
-}
-
-input {
-	border:none;
-	border-bottom: 2px solid #fff;
-	min-width: 850px;
-	padding-bottom: 10px;
-	background-color: transparent;
-	color: #fff;
-	outline: 0;
-	margin-bottom: 20px;
 }
 
 .icons img {
