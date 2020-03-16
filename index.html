@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 	
-    <title>Home</title>
+    <title>reizu</title>
 	<link href="lib/bootstrap.min.css" rel="stylesheet">	
 	<link href="style.css" rel="stylesheet">	
   </head>
@@ -15,9 +15,7 @@
 	<img src="img/erio.gif" class="image" width="130">
 	<h1 class="hello">reizu</h1>
 	<div class="icons">
-		<a href="https://reizu.moe/kpop">
-			discord
-		</a>
+		<a id="swap" onclick="myFunction()">discord</a>
 		<a href="https://twitter.com/reizuxd">
 			twitter
 		</a>
@@ -34,7 +32,17 @@
 			reddit
 		</a>
 	</div>
-    
+
+    <script>
+		function myFunction() {
+  			var x = document.getElementById("swap");
+			if (x.innerHTML === "discord") {
+    			x.innerHTML = "rei#0001";
+  			} else {
+    			x.innerHTML = "discord";
+  			}
+  		} 
+	</script>
     <script src="lib/bootstrap.min.js"></script>
     <script src="script.js"></script>
 	<script src="lib/jquery-3.2.1.slim.min.js?version=4"></script>
