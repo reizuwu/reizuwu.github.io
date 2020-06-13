@@ -1,4 +1,4 @@
-/* Updated 11 June 2020 */
+/* Updated 12 June 2020 */
 
 #contentBlock {
 	display: none !important
@@ -2359,7 +2359,8 @@ span.settText.floatR {
 }
 
 #chatInput {
-	background-color:rgba(15, 15, 15, .2);
+	background-color:rgba(15, 15, 15, 0);
+	
 }
 
 #chatHolder {
