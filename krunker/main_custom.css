@@ -1,4 +1,4 @@
-/* Updated 12 June 2020 */
+/* Updated 13 June 2020 */
 
 #contentBlock {
 	display: none !important
@@ -2373,5 +2373,5 @@ span.settText.floatR {
 }
 
 #weapDisplay {
-	bottom: 30vh !important;
+	bottom: 40vh !important;
 }
