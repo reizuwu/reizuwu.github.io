@@ -1,83 +1,37 @@
 /* Updated 13 June 2020 */
 
-#contentBlock {
-	display: none !important
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+	--accent-color: #dfafff;
 }
 
-.strmIcn {
-	display: inline-block;
-	width: 3vw;
-	height: auto;
-	margin-left: 10px;
-	border-radius: 0px
-}
-
-.streamItem {
-	margin: 0 !important;
-	margin-top: .25vw !important;
-	cursor: pointer;
-	pointer-events: all
-}
-
-.strmViews {
-	font-size: .75vw;
-	color: #dfafff
-}
-
-.shopSale {
-	position: absolute;
-	font-size: .75vw;
-	color: #fdfdfd;
-	width: 100%;
-	top: auto !important;
-	height: auto !important;
-	bottom: 6vh;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	left: 0;
-	line-height: 1.5vw;
-	opacity: .75;
-	text-shadow: none
+* {
+	color: var(--accent-color);
+	font-family: Inter !important;
+	font-size: 1vw;
+	font-weight: 400;
 }
 
 .settingPreset {
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .settingsHeader {
-	width: 100%;
-	padding-bottom: 15px;
-	padding-top: 19px;
-	position: relative !important;
-	top: 0;
-	z-index: 1;
-	background-color: #ffffff00
+	background-color: rgb(0, 0, 0, 0);
 }
 
 #serverSearch,#settSearch {
-	border-radius: 0 
+	border-radius: 0;
 }
 
 .serverHeader {
-	width: 100%;
-	padding-top: 19px;
-	position: relative !important;
-	top: 0;
-	z-index: 999999999;
-	background-color: rgba(0, 0, 0, 0)
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .customImage {
 	height: 1.66vh;
 	margin-bottom: -.25vh
-}
-
-* {
-	color: #dfafff;
-	font-family: Inter !important;
-	font-size: 1vw;
-	font-weight: 400;
 }
 
 input:checked+.sliderCent:before {
@@ -89,63 +43,6 @@ input:checked+.sliderCent:before {
 #skinList {
 	margin-top: 0 !important;
 	text-align: center
-}
-
-.rainbow-text {
-	animation: rainbow 1.5s infinite !important;
-	-webkit-animation: rainbow 1.5s infinite !important
-}
-
-@keyframes rainbow {
-
-	0%,
-	100% {
-		color: red
-	}
-
-	8% {
-		color: #ff7f00
-	}
-
-	16% {
-		color: #ff0
-	}
-
-	25% {
-		color: #7fff00
-	}
-
-	33% {
-		color: #0f0
-	}
-
-	41% {
-		color: #00ff7f
-	}
-
-	50% {
-		color: #0ff
-	}
-
-	58% {
-		color: #007fff
-	}
-
-	66% {
-		color: #00f
-	}
-
-	75% {
-		color: #7f00ff
-	}
-
-	83% {
-		color: #f0f
-	}
-
-	91% {
-		color: #ff007f
-	}
 }
 
 #uiBase {
@@ -293,7 +190,7 @@ input[type=color] {
 
 .clsXPBarC {
 	margin: 0;
-	background-color: #dfafff;
+	background-color: var(--accent-color);
 	height: 100%
 }
 
@@ -376,11 +273,11 @@ input[type=color] {
 }
 
 #menuFPS {
-	color: #dfafff !important
+	color: var(--accent-color) !important
 }
 
 #menuPingIcon {
-	color: #dfafff !important
+	color: var(--accent-color) !important
 }
 
 #mailList {
@@ -451,11 +348,11 @@ input[type=color] {
 }
 
 #ingameFPS {
-	color: #dfafff !important
+	color: var(--accent-color) !important
 }
 
 #pingIcon {
-	color: #dfafff !important
+	color: var(--accent-color) !important
 }
 
 #pingDisplay .material-icons {
@@ -468,7 +365,7 @@ input[type=color] {
 }
 
 .tScoreC {
-	background-color: #dfafff
+	background-color: var(--accent-color)
 }
 
 .tScoreC.you{ 
@@ -748,7 +645,7 @@ b {
 	width: 2.25vh;
 	left: 0 !important;
 	bottom: 0 !important;
-	background-color: #dfafff;
+	background-color: var(--accent-color);
 	-webkit-transition: .2s;
 	transition: .2s;
 	border-radius: 0%
@@ -855,7 +752,7 @@ b {
 	display: block;
 	position: absolute;
 	font-size: 2vw;
-	color: #dfafff;
+	color: var(--accent-color);
 	top: 54%;
 	left: 50%;
 	margin-right: -50%;
@@ -868,7 +765,7 @@ b {
 	top: 11vw;
 	left: 32vw;
 	text-align: center;
-	color: #dfafff
+	color: var(--accent-color)
 }
 
 #claimImg,
@@ -896,7 +793,7 @@ b {
 }
 
 #inGameUI #bottomLeftHolder #healthValue {
-	color: #dfafff !important;
+	color: var(--accent-color) !important;
 	font-size: 2.5vw !important;
 	font-weight: 500 !important;
 	will-change: transform !important;
@@ -984,7 +881,7 @@ b {
 }
 
 .leaderName {
-	color: #dfafff !important;
+	color: var(--accent-color) !important;
 }
 
 #leaderDisplay2 {
@@ -1006,23 +903,23 @@ b {
 }
 
 .terms {
-	color: #dfafff
+	color: var(--accent-color)
 }
 
 .grey {
-	color: #dfafff !important
+	color: var(--accent-color) !important
 }
 
 .grey:active {
-	color: #dfafff !important
+	color: var(--accent-color) !important
 }
 
 .grey:visited {
-	color: #dfafff !important
+	color: var(--accent-color) !important
 }
 
 a {
-	color: #dfafff
+	color: var(--accent-color)
 }
 
 a:active {
@@ -1034,7 +931,7 @@ a:hover {
 }
 
 a:visited {
-	color: #dfafff
+	color: var(--accent-color)
 }
 
 #levelContainer .progressBar {
@@ -1045,7 +942,7 @@ a:visited {
 }
 
 .progressBarInner {
-	background: #dfafff;
+	background: var(--accent-color);
 }
 
 #mailContainer {
@@ -1053,7 +950,7 @@ a:visited {
 }
 
 .clsXPBarC {
-	background-color: #dfafff;
+	background-color: var(--accent-color);
 }
 
 #mainLogo {
@@ -1081,7 +978,7 @@ a:visited {
 
 #menuBtnBrowser {
 	background-color: rgba(0, 0, 0, 0) !important;
-	color: #dfafff !important;
+	color: var(--accent-color) !important;
 	box-shadow: none !important
 }
 
@@ -1091,7 +988,7 @@ a:visited {
 
 #menuBtnRanked {
 	background-color: rgba(0, 0, 0, 0) !important;
-	color: #dfafff !important;
+	color: var(--accent-color) !important;
 	box-shadow: none !important
 }
 
@@ -1101,7 +998,7 @@ a:visited {
 
 #menuBtnHost {
 	background-color: rgba(0, 0, 0, 0) !important;
-	color: #dfafff !important;
+	color: var(--accent-color) !important;
 	box-shadow: none !important
 }
 
@@ -1111,7 +1008,7 @@ a:visited {
 
 #inviteButton {
 	background-color: rgba(0, 0, 0, 0) !important;
-	color: #dfafff !important;
+	color: var(--accent-color) !important;
 	box-shadow: none !important
 }
 
@@ -1121,7 +1018,7 @@ a:visited {
 
 #menuBtnJoin {
 	background-color: rgba(0, 0, 0, 0) !important;
-	color: #dfafff !important;
+	color: var(--accent-color) !important;
 	box-shadow: none !important
 }
 
@@ -1167,7 +1064,7 @@ a:visited {
 }
 
 .teamTotalN1 {
-	color: #dfafff
+	color: var(--accent-color)
 }
 
 #endTable {
@@ -1176,7 +1073,7 @@ a:visited {
 }
 
 .endTableN {
-	color: #dfafff
+	color: var(--accent-color)
 }
 
 #endTimer {
@@ -1286,7 +1183,7 @@ a:visited {
 }
 
 .menuItemTitle {
-	color: #dfafff !important
+	color: var(--accent-color) !important
 }
 
 #merchHolder {
@@ -1533,11 +1430,11 @@ span.gray {
 
 ::-webkit-scrollbar-thumb {
 	border-radius: 0 !important;
-	background-color: #dfafff
+	background-color: var(--accent-color)
 }
 
 .accountButton {
-	background-color: #dfafff !important;
+	background-color: var(--accent-color) !important;
 	color: rgba(255, 255, 255, 1) !important;
 	cursor: pointer !important;
 	display: inline-block !important;
@@ -1569,7 +1466,7 @@ span.gray {
 #instructions {
 	position: absolute;
 	z-index: 9;
-	color: #dfafff;
+	color: var(--accent-color);
 	font-size: 1.25vw;
 }
 
@@ -1607,9 +1504,9 @@ span.gray {
 
 .button {
 	-webkit-transition: all .2s !important;
-	background-color: #dfafff;
+	background-color: var(--accent-color);
 	border-radius: 0 !important;
-	box-shadow: inset 0 -.33vw 0 0 #dfafff;
+	box-shadow: inset 0 -.33vw 0 0 var(--accent-color);
 	box-sizing: border-box !important;
 	color: #fff !important;
 	cursor: pointer !important;
@@ -1633,8 +1530,8 @@ span.gray {
 }
 
 .button:hover {
-	background-color: #dfafff;
-	box-shadow: inset 0 -.33vw 0 0 #dfafff;
+	background-color: var(--accent-color);
+	box-shadow: inset 0 -.33vw 0 0 var(--accent-color);
 	-webkit-transform: scale(.95);
 	transform: scale(.95)
 }
@@ -1712,7 +1609,7 @@ span.gray {
 }
 
 .hostPresetBtn {
-	background-color: #dfafff !important;
+	background-color: var(--accent-color) !important;
 	border-radius: 0vw !important;
 	color: rgba(255, 255, 255, .7) !important;
 	cursor: pointer !important;
@@ -1827,12 +1724,12 @@ span.gray {
 }
 
 .menuTabNew {
-	color: #dfafff;
+	color: var(--accent-color);
 }
 
 .searchBtn {
 	background-color: rgba(0, 0, 0, 0);
-	color: #dfafff
+	color: var(--accent-color)
 }
 
 .searchBtn:hover {
@@ -1868,12 +1765,12 @@ span.gray {
 	clear: both;
 	float: right;
 	font-size: 1vw !important;
-	color: #dfafff
+	color: var(--accent-color)
 }
 
 .settSubName {
 	clear: both !important;
-	color: #dfafff !important;
+	color: var(--accent-color) !important;
 	font-size: .825vw !important;
 	margin-top: .5vw !important;
 	margin-left: 1vw !important;
@@ -1883,14 +1780,14 @@ span.gray {
 .settName,
 .settNameSmall {
 	clear: both !important;
-	color: #dfafff !important;
+	color: var(--accent-color) !important;
 	font-size: 1vw !important;
 	margin-top: .75vh !important;
 	width: 100%
 }
 
 .wepLink {
-	color: #dfafff;
+	color: var(--accent-color);
 }
 
 .skinCard {
@@ -1996,7 +1893,7 @@ span.gray {
 }
 
 .sliderVal {
-	background: #dfafff !important;
+	background: var(--accent-color) !important;
 	border-radius: 0vw !important;
 	color: #fdfdfd !important;
 	float: right !important;
@@ -2034,7 +1931,7 @@ span.gray {
 }
 
 .sliderValsub {
-	background: #dfafff !important;
+	background: var(--accent-color) !important;
 	border-radius: 0vw !important;
 	color: #fdfdfd !important;
 	float: right !important;
@@ -2095,7 +1992,7 @@ span.gray {
 }
 
 .xpBarB {
-	background-color: #dfafff !important;
+	background-color: var(--accent-color) !important;
 	border-radius: 0vw !important;
 	height: 100% !important
 }
@@ -2120,7 +2017,7 @@ a {
 }
 
 input:checked+.slider {
-	background-color: #dfafff !important;
+	background-color: var(--accent-color) !important;
 }
 
 input:checked+.slider:before {
@@ -2137,36 +2034,36 @@ span.floatR {
 }
 
 .settText {
-	color: #dfafff
+	color: var(--accent-color)
 }
 
 .xpBarB {
-	color: #dfafff;
+	color: var(--accent-color);
 }
 
 .followBut {
-	color: #dfafff;
+	color: var(--accent-color);
 }
 
 .accountButton {
-	color: #dfafff;
+	color: var(--accent-color);
 }
 
 .mapLoadButton {
-	color: #dfafff;
+	color: var(--accent-color);
 }
 
 .hostPresetBtn {
-	color: #dfafff;
+	color: var(--accent-color);
 }
 
 .equipBtn {
-	color: #dfafff;
+	color: var(--accent-color);
 }
 
 .quickJoin {
 	border-radius: 0px;
-	background-color: #dfafff;
+	background-color: var(--accent-color);
 	font-size: 13px;
 	padding: 4px;
 	cursor: pointer;
@@ -2180,15 +2077,15 @@ span.floatR {
 }
 
 input:checked+.sliderSml {
-	background-color: #dfafff;
+	background-color: var(--accent-color);
 }
 
 input:focus+.sldierSml {
-	box-shadow: 0 0 1px #dfafff;
+	box-shadow: 0 0 1px var(--accent-color);
 }
 
 input:checked+.slider {
-	background-color: #dfafff;
+	background-color: var(--accent-color);
 }
 
 #customizeButton {
@@ -2199,14 +2096,14 @@ input:checked+.slider {
 }
 
 .sliderM::-webkit-slider-thumb {
-	background: #dfafff;
+	background: var(--accent-color);
 	height: 2vh !important;
 	width: 1vh !important;
 	border-radius: 0
 }
 
 .sliderM::-moz-range-thumb {
-	background: #dfafff;
+	background: var(--accent-color);
 	height: 2vh !important;
 	width: 2vh !important;
 }
@@ -2318,8 +2215,8 @@ span.settText.floatR {
 	height: 60px;
 	line-height: 50px;
 	cursor: pointer;
-	box-shadow: inset 0 -10px 0 0 #dfafff;
-	background-color: #dfafff;
+	box-shadow: inset 0 -10px 0 0 var(--accent-color);
+	background-color: var(--accent-color);
 	font-size: 25px;
 	padding-top: 8px;
 	padding-bottom: 8px;
@@ -2327,7 +2224,7 @@ span.settText.floatR {
 }
 
 .joinQueue:hover {
-	box-shadow: inset 0 -7px 0 0 #dfafff !important
+	box-shadow: inset 0 -7px 0 0 var(--accent-color) !important
 }
 
 #ammoDisplay {
