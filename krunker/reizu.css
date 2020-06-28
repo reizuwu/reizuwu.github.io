@@ -874,7 +874,7 @@ b {
 #inGameUI #topRight #livesCount,
 #inGameUI #topRight #spectCount,
 #inGameUI #topRight #streakCount {
-	color: rgba(15, 15, 15, 0.2);
+	color: var(--ingame-bg-color);
 	border-radius: 0vw !important;
 	margin-top: .5vw !important;
 	padding: .5vw !important
@@ -2290,7 +2290,7 @@ span.settText.floatR {
 
 .chatItem {
 	border-radius: 0px;
-	background-color:rgb(15, 15, 15, .2)
+	background-color:var(--ingame-bg-color)
 }
 
 #weapDisplay {
