@@ -1,4 +1,4 @@
-/* Updated 13 June 2020 */
+/* Updated 28 June 2020 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
@@ -874,7 +874,7 @@ b {
 #inGameUI #topRight #livesCount,
 #inGameUI #topRight #spectCount,
 #inGameUI #topRight #streakCount {
-	color: var(--ingame-bg-color);
+	background-color: var(--ingame-bg-color);
 	border-radius: 0vw !important;
 	margin-top: .5vw !important;
 	padding: .5vw !important
