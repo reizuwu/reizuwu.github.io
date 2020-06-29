@@ -1,4 +1,4 @@
-/* Updated 28 June 2020 */
+/* Updated 29 June 2020 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
@@ -960,7 +960,7 @@ a:visited {
 
 #levelContainer .progressBar {
 	height: .25vw !important;
-	margin-left: .75vw !important;
+	margin-left: 2vw !important;
 	margin-top: .25vw !important;
 	width: 5vw !important
 }
@@ -1646,11 +1646,8 @@ span.gray {
 	width: 4vw !important
 }
 
-.imageButton.krSocial {
-	height: 1.25vw !important;
-	margin-left: .25vw !important;
-	margin-top: .5vw !important;
-	width: 1.25vw !important
+.krSocial {
+	display: none;
 }
 
 .inputGrey3 {
@@ -1707,7 +1704,6 @@ span.gray {
 	align-items: center !important;
 	display: flex !important;
 	flex-direction: row !important;
-	width: 10vw !important
 }
 
 .krInfo::before {
