@@ -797,8 +797,9 @@ b {
 	background-color: transparent;
 	width: 110px;
 	border-radius: 0;
-	margin-left: 30vw;
-	margin-bottom: 25vh;
+	position: fixed;
+	left: 2%;
+	bottom: 4%;
 	align-items: center;
 }
 
@@ -862,20 +863,11 @@ b {
 #inGameUI #topRight #deathCount,
 #inGameUI #topRight #killCount,
 #inGameUI #topRight #livesCount,
-#inGameUI #topRight #spectCount,
 #inGameUI #topRight #streakCount {
 	background-color: var(--ingame-bg-color);
 	border-radius: 0vw !important;
 	margin-top: .5vw !important;
 	padding: .5vw !important
-}
-
-#spectCount {
-	font-size: 1.5vw !important
-}
-
-#spectCount .material-icons {
-	font-size: 2vw !important
 }
 
 #leaderContainer2 {
@@ -1399,26 +1391,6 @@ span.gray {
 	pointer-events: all !important;
 	position: absolute !important;
 	right: 1vw !important
-}
-
-#uiBase.onMenu #spectButton {
-	align-items: center !important;
-	color: rgba(255, 255, 255, .5) !important;
-	display: flex !important;
-	font-size: 1vw !important;
-	position: absolute !important;
-	left: 91vw !important;
-	right: 0 !important;
-	top: 66vh !important;
-	width: 10vw;
-	height: fit-content;
-	bottom: 0 !important;
-	z-index: 9 !important
-}
-
-#uiBase.onMenu #spectButton span {
-	color: rgba(255, 255, 255, .6) !important;
-	font-size: 1vw !important
 }
 
 #voiceDisplay {
@@ -2249,12 +2221,12 @@ span.settText.floatR {
 
 #ammoDisplay {
 	background-color: transparent;
-	display: inline-block !important;
 	width: 126px;
-	padding: 0vw !important;
-	border-radius: 0vw !important;
-	margin-right: 30vw;
-	margin-bottom: 28vh;
+	padding: 0;
+	border-radius: 0 ;
+	position: fixed;
+	right: 2%;
+	bottom: 1%;
 }
 
 #ammoVal {
