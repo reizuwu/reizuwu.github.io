@@ -25,7 +25,7 @@
 	position: relative !important;
 	top: 0;
 	z-index: 1;
-	background-color: #ffffff00
+	background-color: transparent;
 }
 
 #serverSearch,#settSearch {
@@ -280,11 +280,11 @@ input[type=color] {
 }
 
 #menuFPS {
-	color: var(--accent-color) !important
+	color: var(--accent-color) !important;
 }
 
 #menuPingIcon {
-	color: var(--accent-color) !important
+	color: var(--accent-color) !important;
 }
 
 #mailList {
@@ -294,16 +294,7 @@ input[type=color] {
 }
 
 .imageButton {
-	display: inline-block;
-	width: 0vw;
-	height: 0vw;
-	background-size: contain;
-	background-repeat: no-repeat;
-	margin-left: 0px;
-	pointer-events: all;
-	cursor: pointer;
-	-webkit-transition: all .2s;
-	transition: all .2s
+	display: none !important;
 }
 
 #menuClassName {
@@ -654,8 +645,7 @@ b {
 }
 
 #hudClassIcon {
-	width: 0;
-	height: 0;
+	display: none;
 }
 
 .sliderCent {
@@ -956,6 +946,15 @@ a:hover {
 
 a:visited {
 	color: var(--accent-color)
+}
+
+.subPassChg {
+	border-radius: 0;
+	background-color: var(--accent-color);
+}
+
+.subPassChg:hover {
+	background-color: var(--accent-color);
 }
 
 #levelContainer .progressBar {
@@ -1606,16 +1605,16 @@ span.gray {
 }
 
 .headerBarLeft {
-	background-color: rgba(0, 0, 0, 0) !important;
-	border-radius: 0 0 0vw 0 !important;
+	background-color: transparent !important;
+	border-radius: 0 !important;
 	left: 0 !important;
 	height: 5vh !important;
 	padding-bottom: 0.7vh !important
 }
 
 .headerBarRight {
-	background-color: rgba(0, 0, 0, 0) !important;
-	border-radius: 0 0 0vw 0 !important;
+	background-color: transparent !important;
+	border-radius: 0 !important;
 	right: -3px !important
 }
 
@@ -1651,7 +1650,7 @@ span.gray {
 }
 
 .inputGrey3 {
-	background: rgba(100, 100, 100, 1) !important;
+	background: rgbargba(0, 0, 0, .3)!important;
 	border: none !important;
 	border-radius: 0vw !important;
 	color: rgba(255, 255, 255, 1) !important;
@@ -1664,7 +1663,7 @@ span.gray {
 }
 
 #rankedPartyKey {
-	background: rgba(100, 100, 100, 1) !important;
+	background: rgba(0, 0, 0, .3)!important;
 	border: none !important;
 	border-radius: 0vw !important;
 	color: rgba(255, 255, 255, 1) !important;
@@ -1676,7 +1675,7 @@ span.gray {
 }
 
 .inputGrey2 {
-	background: rgba(100, 100, 100, 1) !important;
+	background: rgba(0, 0, 0, .3)!important;
 	border: none !important;
 	border-radius: 0vw !important;
 	color: rgba(255, 255, 255, 1) !important;
@@ -1857,8 +1856,8 @@ span.gray {
 
 .slider {
 	-webkit-transition: .4s !important;
-	background-color: rgba(100, 100, 100, .75) !important;
-	border-radius: 0vw !important;
+	background-color: rgba(0, 0, 0, .3)!important;
+	border-radius: 0 !important;
 	bottom: 0 !important;
 	cursor: pointer !important;
 	left: 0 !important;
@@ -1870,7 +1869,7 @@ span.gray {
 
 .slider:before {
 	background-color: #fdfdfd !important;
-	border-radius: 0% !important;
+	border-radius: 0 !important;
 	bottom: .15vw !important;
 	content: "" !important;
 	height: 1.1vw !important;
@@ -1882,7 +1881,7 @@ span.gray {
 
 .sliderM {
 	-webkit-appearance: none !important;
-	background-color: rgba(255, 255, 255, .75) !important;
+	background-color: rgba(0, 0, 0, .3) !important;
 	border-radius: 0px !important;
 	height: 1vh !important;
 	outline: 0 !important;
@@ -1902,7 +1901,7 @@ span.gray {
 .sliderSml:before {
 	-webkit-transition: .4s !important;
 	background-color: #fff !important;
-	border-radius: 0% !important;
+	border-radius: 0 !important;
 	bottom: .133vw !important;
 	content: "" !important;
 	height: 1vw !important;
@@ -1914,7 +1913,7 @@ span.gray {
 
 .sliderVal {
 	background: var(--accent-color) !important;
-	border-radius: 0vw !important;
+	border-radius: 0 !important;
 	color: #fdfdfd !important;
 	float: right !important;
 	font-size: .75vw !important;
@@ -1967,7 +1966,8 @@ span.gray {
 }
 
 .smlInput {
-	background-color: rgba(100, 100, 100, .75) !important;
+	background-color: rgba(0, 0, 0, .3)!important;
+	border-radius: 0 !important;
 	border: none !important;
 	box-sizing: border-box !important;
 	color: rgba(255, 255, 255, 1) !important;
