@@ -1,4 +1,4 @@
-/* Updated 1 July 2020 */
+/* Updated 2 July 2020 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
@@ -799,7 +799,7 @@ b {
 	border-radius: 0;
 	position: fixed;
 	left: 30%;
-	bottom: 30%;
+	bottom: 25%;
 	align-items: center;
 }
 
@@ -1058,16 +1058,12 @@ a:visited {
 
 
 #menuLevelIcon {
-	background-repeat: no-repeat !important;
-	background-size: contain !important;
-	height: 2vw !important;
-	margin-bottom: -.25vw !important;
-	margin-right: .25vw !important;
-	width: 2vw !important
+	display: none;
 }
 
 #menuLevelText {
-	font-size: 1vw
+	font-size: 1vw;
+	margin-left: 40px;
 }
 
 .teamTotals {
@@ -2226,7 +2222,7 @@ span.settText.floatR {
 	border-radius: 0 ;
 	position: fixed;
 	right: 30%;
-	bottom: calc(30% + 9px);
+	bottom: calc(25% + 9px);
 }
 
 #ammoVal {
