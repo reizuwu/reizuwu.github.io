@@ -8,14 +8,14 @@
 }
 
 * {
-	color: var(--accent-color);
 	font-family: Inter !important;
 	font-size: 1vw;
 	font-weight: 400;
 }
 
 .settingPreset {
-    border-radius: 0;
+	border-radius: 0;
+	background-color: rgba(0, 0, 0, .3);
 }
 
 .settingsHeader {
@@ -28,12 +28,12 @@
 	background-color: transparent;
 }
 
-#serverSearch,#settSearch {
+#serverSearch, #settSearch {
 	border-radius: 0;
 }
 
 .serverHeader {
-	background-color: rgba(0, 0, 0, 0);
+	background-color: transparent;
 }
 
 .customImage {
@@ -73,6 +73,11 @@ input:checked+.sliderCent:before {
 	left: 0 !important;
 	z-index: 10;
 	pointer-events: none !important
+}
+
+input {
+	border-radius: 0 !important;
+	background: rgba(0, 0, 0, .3) !important;
 }
 
 input[type=color] {
@@ -1098,15 +1103,16 @@ a:visited {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	border-radius: 0% !important;
+	border-radius: 0 !important;
 	padding: 1% !important;
 	width: 37.66vw !important;
+	max-height: calc(100% - 360px) !important;
 	z-index: 2 !important
 }
 
 #extraChannelList {
 	background-color: rgba(100, 65, 100, 1);
-	border-radius: 0% !important;
+	border-radius: 0 !important;
 	bottom: 20vh;
 	top: auto !important;
 	box-shadow: 0 .5vw 0 0 #070707 !important;
@@ -1554,9 +1560,9 @@ span.gray {
 }
 
 .formInput {
-	background: #eee;
+	background: rgba(0, 0, 0, .3) !important;
 	border: none;
-	border-radius: 0px;
+	border-radius: 0;
 	box-shadow: none;
 	float: right;
 	font-size: .9vw !important;
@@ -2013,6 +2019,26 @@ input:checked+.sliderSml:before {
 	transform: translateX(1.2vw) !important
 }
 
+.hostOpt {
+	border-radius: 0;
+	border: none;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.optCheck {
+	border-radius: 0;
+	background-color: transparent;
+}
+
+input:checked+.optCheck {
+	background-color: var(--accent-color);
+}
+
+#presetSelect {
+	border-radius: 0 !important;
+	background-color: rgba(0, 0, 0, .3) !important;
+}
+
 #menuKRCount,
 span.floatR {
 	font-size: 1vw !important
@@ -2094,7 +2120,7 @@ input:checked+.slider {
 }
 
 span.settText.floatR {
-	color: rgba(175, 175, 175, 1);
+	color: var(--accent-color);
 	font-size: 1vw !important
 }
 
@@ -2107,7 +2133,7 @@ span.settText.floatR {
 	width: 250px;
 	padding: 8px;
 	padding-left: 12px;
-	border-radius: 0px;
+	border-radius: 0;
 	background-color: rgba(0, 0, 0, .1)
 }
 
@@ -2124,6 +2150,15 @@ span.settText.floatR {
 	text-overflow: ellipsis !important
 }
 
+.partyAvatar {
+	border: none;
+	border-radius: 0;
+}
+
+.partyUsername>span {
+	color: var(--accent-color);
+}
+
 .rankedSelection {
 	overflow: hidden;
 	position: relative;
@@ -2132,7 +2167,14 @@ span.settText.floatR {
 	width: 33%;
 	margin-left: 5px;
 	padding-left: 4px;
-	display: inline-block
+	display: inline-block;
+	border-radius: 0;
+}
+
+.rankedWarning {
+	border-radius: 0;
+	background-color: rgba(0, 0, 0, .3);
+	color: var(--accent-color);
 }
 
 .hostMapName {
@@ -2200,16 +2242,25 @@ span.settText.floatR {
 	height: 60px;
 	line-height: 50px;
 	cursor: pointer;
-	box-shadow: inset 0 -10px 0 0 var(--accent-color);
+	box-shadow: none;
 	background-color: var(--accent-color);
 	font-size: 25px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	text-shadow: 0 0 .5vw transparent !important
+	text-shadow: none;
 }
 
 .joinQueue:hover {
-	box-shadow: inset 0 -7px 0 0 var(--accent-color) !important
+	box-shadow: none
+}
+
+.jQR {
+	box-shadow: none !important;
+	background-color: var(--accent-color) !important;
+}
+
+.jQR:hover {
+	box-shadow: none !important;
 }
 
 #ammoDisplay {
@@ -2242,7 +2293,6 @@ span.settText.floatR {
 
 #chatInput {
 	background-color: transparent;
-	
 }
 
 #chatHolder {
