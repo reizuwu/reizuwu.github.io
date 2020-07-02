@@ -650,15 +650,14 @@ b {
 
 .sliderCent {
 	border-radius: 0;
+	background-color: rgba(0, 0, 0, .3);
 }
 
 .sliderCent:before {
 	position: absolute;
 	content: "";
-	height: 2.25vh;
-	width: 2.25vh;
-	left: 0 !important;
-	bottom: 0 !important;
+	height: 1vw;
+	width: 1vw;
 	background-color: var(--accent-color);
 	-webkit-transition: .2s;
 	transition: .2s;
@@ -1389,7 +1388,7 @@ span.gray {
 }
 
 #uiBase.onMenu #spectButton span {
-	color: rgba(255, 255, 255, .6) !important;
+	color: var(--accent-color) !important;
 	font-size: 1vw !important
 }
 
@@ -1870,7 +1869,8 @@ span.gray {
 }
 
 .sliderSml {
-    border-radius: 0;
+	border-radius: 0;
+	background-color: rgba(0, 0, 0, .3);
 }
 
 .sliderSml:before {
