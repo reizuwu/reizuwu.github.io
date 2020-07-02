@@ -408,11 +408,6 @@ input[type=color] {
 	height: 2.5vh
 }
 
-#menuUsernameContainer {
-	max-width: 20vw;
-	overflow: hidden
-}
-
 .weaponItem {
 	margin-top: 0
 }
@@ -951,17 +946,11 @@ a:visited {
 
 #levelContainer .progressBar {
 	height: .25vw !important;
-	margin-left: 2vw !important;
-	margin-top: .25vw !important;
 	width: 5vw !important
 }
 
 .progressBarInner {
 	background: var(--accent-color);
-}
-
-#mailContainer {
-	margin-left: 1vw !important;
 }
 
 .clsXPBarC {
@@ -1063,7 +1052,6 @@ a:visited {
 
 #menuLevelText {
 	font-size: 1vw;
-	margin-left: 40px;
 }
 
 .teamTotals {
@@ -1592,6 +1580,10 @@ span.gray {
 	top: 0 !important
 }
 
+.verticalSeparator {
+	background-color: transparent;
+}
+
 .headerBarLeft {
 	background-color: transparent !important;
 	border-radius: 0 !important;
@@ -1604,6 +1596,10 @@ span.gray {
 	background-color: transparent !important;
 	border-radius: 0 !important;
 	right: -3px !important
+}
+
+.headerBarRight .verticalSeparator {
+	display: none;
 }
 
 .headerBarRight.imageButton {
@@ -1685,21 +1681,6 @@ span.gray {
 	height: 1.25vw;
 	padding: .125vw !important;
 	text-overflow: ellipsis !important
-}
-
-.krInfo {
-	align-items: center !important;
-	display: flex !important;
-	flex-direction: row !important;
-}
-
-.krInfo::before {
-	background-size: contain;
-	content: "" !important;
-	height: 1.5vw !important;
-	margin-bottom: 0 !important;
-	margin-right: .25vw !important;
-	width: 1.5vw !important
 }
 
 .leftUIB2 {
@@ -1982,10 +1963,6 @@ span.gray {
 	position: relative !important;
 	vertical-align: bottom !important;
 	width: 2.5vw !important
-}
-
-.verticalSeparator {
-	display: none;
 }
 
 .xpBar {
