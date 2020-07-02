@@ -2019,6 +2019,11 @@ input:checked+.sliderSml:before {
 	transform: translateX(1.2vw) !important
 }
 
+.hostToggle {
+	border-radius: 0;
+	background-color: var(--accent-color);
+}
+
 .hostOpt {
 	border-radius: 0;
 	border: none;
@@ -2292,7 +2297,7 @@ span.settText.floatR {
 }
 
 #chatInput {
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 #chatHolder {
