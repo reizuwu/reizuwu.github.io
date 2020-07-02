@@ -8,6 +8,7 @@
 }
 
 * {
+	color: var(--accent-color);
 	font-family: Inter !important;
 	font-size: 1vw;
 	font-weight: 400;
