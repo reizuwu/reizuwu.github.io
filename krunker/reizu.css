@@ -15,8 +15,7 @@
 }
 
 .settingPreset {
-	border-radius: 0;
-	background-color: rgba(0, 0, 0, .3);
+	display: none;
 }
 
 .settingsHeader {
@@ -27,6 +26,10 @@
 	top: 0;
 	z-index: 1;
 	background-color: transparent;
+}
+
+#requiresRestart {
+	display: none;
 }
 
 #serverSearch, #settSearch {
@@ -136,13 +139,8 @@ input[type=color] {
 	transform: none !important
 }
 
-*/ .hostMap {
-	position: relative;
-	height: 5vw;
-	margin: 0;
-	width: 33%;
-	overflow: hidden;
-	display: inline-block
+.hostMap {
+	border-radius: 0;
 }
 
 .classCard {
@@ -259,7 +257,7 @@ input[type=color] {
 }
 
 #teamSelector {
-	bottom: calc(0vh + 150px) !important;
+	bottom: 150px !important;
 }
 
 #teamSelector #teamNm1 {
@@ -278,7 +276,7 @@ input[type=color] {
 
 #teamSelector .switchsml.centSwitch {
 	float: left !important;
-	bottom: .125vh
+	bottom: .5vh
 }
 
 #menuFPSDisplay {
@@ -287,16 +285,27 @@ input[type=color] {
 
 #menuFPS {
 	color: var(--accent-color) !important;
+	font-size: 12px;
 }
 
 #menuPingIcon {
 	color: var(--accent-color) !important;
 }
 
-#mailList {
-	margin-top: 10px;
-	color: rgba(0, 0, 0, .5);
-	background-color: rgba(255, 255, 255, .25)
+#menuPingText {
+	font-size: 12px;
+}
+
+.mailObj {
+	border-radius: 0;
+}
+
+.mailFrom {
+	color: var(--accent-color);
+}
+
+.mailText {
+	color: var(--accent-color);
 }
 
 .imageButton {
@@ -334,7 +343,7 @@ input[type=color] {
 	margin-bottom: 5px;
 	width: 33vw;
 	display: inline-block;
-	color: #999
+	color: var(--accent-color);
 }
 
 #classPreviewCanvas {
@@ -479,10 +488,6 @@ tr td:nth-child(2) {
 	padding-bottom: 4px;
 	z-index: 1;
 	text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020
-}
-
-b {
-	font-size: 1vw !important
 }
 
 .purBtn {
@@ -709,7 +714,7 @@ b {
 }
 
 #menuWindow>div:nth-child(2) {
-	background-color: rgba(0, 0, 0, 0) !important;
+	background-color: transparent !important;
 }
 
 .skinImgC {
@@ -1099,15 +1104,16 @@ a:visited {
 }
 
 #menuWindow {
-	background-color: rgba(15, 15, 15, 0.5);
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
+	background-color: transparent;
+	backdrop-filter: blur(5px);
+	left: 30.25vw !important;
 	box-shadow: none;
 	border-radius: 0 !important;
 	padding: 1% !important;
 	width: 37.66vw !important;
-	max-height: calc(100% - 360px) !important;
-	z-index: 2 !important
+	max-height: 65% !important;
+	z-index: 2 !important;
+	transform: none;
 }
 
 #extraChannelList {
@@ -1289,7 +1295,7 @@ a:visited {
 #subLogoButtons {
 	position: absolute !important;
 	top: auto !important;
-	bottom: 0vh !important;
+	bottom: 0% !important;
 	left: 50vw;
 	right: auto !important;
 	transform: translate(-50%, -50%) !important;
@@ -1379,7 +1385,7 @@ span.gray {
 	display: flex !important;
 	font-size: 1vw !important;
 	position: absolute !important;
-	left: 91vw !important;
+	left: 92.3vw !important;
 	right: 0 !important;
 	top: 66vh !important;
 	width: 10vw;
@@ -1424,9 +1430,10 @@ span.gray {
 }
 
 ::-webkit-scrollbar-track {
-	box-shadow: none !important;
-	border-radius: 0 !important;
-	background-color: rgb(15, 15, 15, .2) !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0;
+	background-color: rgb(15, 15, 15, .2);
 }
 
 ::-webkit-scrollbar {
@@ -1434,13 +1441,15 @@ span.gray {
 }
 
 ::-webkit-scrollbar-thumb {
-	border-radius: 0 !important;
-	background-color: var(--accent-color)
+	border-radius: 0;
+	background: var(--accent-color);
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 .accountButton {
-	background-color: var(--accent-color) !important;
-	color: rgba(255, 255, 255, 1) !important;
+	background-color: transparent;
+	color: var(--accent-color);
 	cursor: pointer !important;
 	display: inline-block !important;
 	font-size: 1vw !important;
@@ -1526,19 +1535,30 @@ span.gray {
 }
 
 .button.lgn {
+	background-color: transparent;
+	color: var(--accent-color) !important;
 	font-size: 1vw !important;
 	padding-left: 1vw !important;
 	padding-right: 1vw !important;
 	padding-top: 1vh !important;
 	width: fit-content !important;
 	height: fit-content !important;
+	box-shadow: none;
 }
 
 .button:hover {
 	background-color: var(--accent-color);
-	box-shadow: inset 0 -.33vw 0 0 var(--accent-color);
+	box-shadow: none;
 	-webkit-transform: scale(.95);
 	transform: scale(.95)
+}
+
+.button.lgn:hover {
+	background-color: transparent;
+	color: #fff !important;
+	box-shadow: none;
+	-webkit-transform: none;
+	transform: none;
 }
 
 .button.small {
@@ -1622,9 +1642,9 @@ span.gray {
 }
 
 .hostPresetBtn {
-	background-color: var(--accent-color) !important;
-	border-radius: 0vw !important;
-	color: rgba(255, 255, 255, .7) !important;
+	background-color: transparent !important;
+	border-radius: 0 !important;
+	color: var(--accent-color) !important;
 	cursor: pointer !important;
 	float: right !important;
 	font-size: 1vw !important;
@@ -1633,6 +1653,10 @@ span.gray {
 	padding: .25vw !important;
 	text-align: center !important;
 	width: 4vw !important
+}
+
+.hostPresetBtn:hover {
+	color: #fff !important;
 }
 
 .krSocial {
@@ -1698,12 +1722,12 @@ span.gray {
 	font-family: 'Material Icons' !important;
 	font-size: 24px;
 	font-style: normal !important;
-	font-weight: 400 !important
+	font-weight: 400 !important;
 }
 
 .menuLink {
 	font-size: 1vw !important;
-	pointer-events: auto !important
+	pointer-events: auto !important;
 }
 
 .menuTab {
@@ -1717,8 +1741,23 @@ span.gray {
 	padding: .25vw .75vw !important
 }
 
+.menuTabsNew {
+	border-radius: 0;
+	background-color: transparent;
+}
+
 .menuTabNew {
 	color: var(--accent-color);
+}
+
+.menuTabNew:hover {
+	color: #fff;
+	box-shadow: none !important;
+}
+
+.tabANew {
+	color: #fff !important;
+	box-shadow: none !important;
 }
 
 .searchBtn {
@@ -1750,7 +1789,7 @@ span.gray {
 }
 
 .setHed {
-	color: rgba(100, 100, 100, 1) !important;
+	color: #fff !important;
 	font-size: 1.125vw !important;
 	margin-top: 1.25vw !important
 }
@@ -2022,7 +2061,12 @@ input:checked+.sliderSml:before {
 
 .hostToggle {
 	border-radius: 0;
-	background-color: var(--accent-color);
+	background-color: transparent;
+	color: var(--accent-color);
+}
+
+.hostToggle:hover {
+	color: #fff;
 }
 
 .hostOpt {
@@ -2034,6 +2078,7 @@ input:checked+.sliderSml:before {
 .optCheck {
 	border-radius: 0;
 	background-color: transparent;
+	text-shadow: none;
 }
 
 input:checked+.optCheck {
@@ -2059,10 +2104,6 @@ span.floatR {
 }
 
 .followBut {
-	color: var(--accent-color);
-}
-
-.accountButton {
 	color: var(--accent-color);
 }
 
@@ -2145,9 +2186,9 @@ span.settText.floatR {
 
 #queueRegionSelect {
 	margin-top: 0;
-	background: rgba(100, 100, 100, 1) !important;
-	border: none !important;
-	border-radius: 0vw !important;
+	background: rgba(0, 0, 0, .3);
+	border: none;
+	border-radius: 0;
 	color: rgba(255, 255, 255, 1) !important;
 	float: right !important;
 	font-size: .75vw !important;
@@ -2165,6 +2206,28 @@ span.settText.floatR {
 	color: var(--accent-color);
 }
 
+.reqW {
+	border-radius: 0;
+	background-color: transparent;
+}
+
+.reqW.login:hover {
+	background-color: transparent;
+}
+
+.reqWLvl {
+	color: var(--accent-color);
+	margin-top: 10%;
+}
+
+.reqWTxt {
+	color: var(--accent-color);
+}
+
+.material-icons.reqWIcon {
+	display: none;
+}
+
 .rankedSelection {
 	overflow: hidden;
 	position: relative;
@@ -2179,12 +2242,12 @@ span.settText.floatR {
 
 .rankedWarning {
 	border-radius: 0;
-	background-color: rgba(0, 0, 0, .3);
-	color: var(--accent-color);
+	background-color: transparent;
+	color: #fff;
 }
 
 .hostMapName {
-	font-size: 1vw
+	font-size: 1vw;
 }
 
 .rankedType {
@@ -2238,7 +2301,7 @@ span.settText.floatR {
 
 .joinQueue {
 	border-radius: 0px;
-	color: #fff;
+	color: var(--accent-color);
 	text-align: center;
 	margin-top: 12px;
 	display: inline-block;
@@ -2249,7 +2312,7 @@ span.settText.floatR {
 	line-height: 50px;
 	cursor: pointer;
 	box-shadow: none;
-	background-color: var(--accent-color);
+	background-color: transparent;
 	font-size: 25px;
 	padding-top: 8px;
 	padding-bottom: 8px;
@@ -2257,7 +2320,10 @@ span.settText.floatR {
 }
 
 .joinQueue:hover {
-	box-shadow: none
+	height: 60px;
+    margin-top: 12px;
+	box-shadow: none;
+	color: #fff;
 }
 
 .jQR {
