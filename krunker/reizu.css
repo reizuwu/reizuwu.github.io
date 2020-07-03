@@ -476,18 +476,18 @@ tr td:nth-child(2) {
 	white-space: nowrap;
 	background-size: contain;
 	text-align: center;
-	color: #ffc147;
 	margin-bottom: 1vh !important;
 	margin-left: 0;
 	width: 10vw;
 	height: 14.3vh;
 	vertical-align: top;
+	border-radius: 0;
 	display: inline-block;
 	font-size: 1vw;
 	position: relative;
 	padding-bottom: 4px;
 	z-index: 1;
-	text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020
+	text-shadow: none;
 }
 
 .purBtn {
@@ -733,6 +733,10 @@ tr td:nth-child(2) {
 	transform: scale(1)
 }
 
+.spinVal {
+	color: var(--accent-color);
+}
+
 #spinRespin {
 	z-index: 99999999999;
 	position: absolute !important;
@@ -946,12 +950,36 @@ a:visited {
 }
 
 .subPassChg {
-	border-radius: 0;
-	background-color: var(--accent-color);
+	background-color: transparent;
+	color: var(--accent-color);
 }
 
 .subPassChg:hover {
-	background-color: var(--accent-color);
+	background-color: transparent;
+	color: #fff;
+	transform: none;
+}
+
+.creatorCodeBtn {
+	background-color: transparent !important;
+	color: var(--accent-color);
+}
+
+.creatorCodeBtn:hover {
+	background-color: transparent !important;
+	color: #fff;
+	filter: none;
+    -webkit-filter: none;
+}
+
+.redVouchBtn {
+	background-color: transparent;
+	color: var(--accent-color);
+}
+
+.redVouchBtn:hover {
+	background-color: transparent;
+	color: #fff;
 }
 
 #levelContainer .progressBar {
