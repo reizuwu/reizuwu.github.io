@@ -1,4 +1,4 @@
-/* Updated 2 July 2020 */
+/* Updated 3 July 2020 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
@@ -2226,7 +2226,6 @@ span.settText.floatR {
 }
 
 .partyAvatar {
-	border: none;
 	border-radius: 0;
 }
 
@@ -2356,7 +2355,7 @@ span.settText.floatR {
 
 .jQR {
 	box-shadow: none !important;
-	background-color: var(--accent-color) !important;
+	background-color: transparent !important;
 }
 
 .jQR:hover {
