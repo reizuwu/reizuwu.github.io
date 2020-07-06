@@ -1,4 +1,4 @@
-/* Updated 3 July 2020 */
+/* Updated 5 July 2020 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
@@ -63,7 +63,7 @@ input:checked+.sliderCent:before {
 }
 
 #1 * {
-	pointer-events: none !important
+	pointer-events: none !important;
 }
 
 #aHolder {
@@ -419,10 +419,6 @@ input[type=color] {
 	clear: right
 }
 
-#healthBar {
-	height: 2.5vh
-}
-
 .weaponItem {
 	margin-top: 0
 }
@@ -454,7 +450,7 @@ tr td:nth-child(2) {
 .shopSale {
 	position: absolute;
 	font-size: .75vw;
-	color: #fdfdfd;
+	color: #fff;
 	width: 100%;
 	top: auto !important;
 	height: auto !important;
@@ -492,7 +488,7 @@ tr td:nth-child(2) {
 
 .purBtn {
 	font-size: 1vw !important;
-	color: #fdfdfd;
+	color: #fff;
 	background-color: rgba(61, 61, 61, .5);
 	width: 100%;
 	text-align: center;
@@ -804,36 +800,39 @@ tr td:nth-child(2) {
 
 #healthValueHolder {
 	background-color: transparent;
-	width: 110px;
+	width: 100px;
+	height: 65px;
 	border-radius: 0;
 	position: fixed;
 	left: 30%;
 	bottom: 25%;
+	padding: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
 	align-items: center;
 }
 
-#inGameUI #bottomLeftHolder {
+#bottomLeftHolder {
 	text-align: center;
 }
 
-#inGameUI #bottomLeftHolder #healthValue {
-	color: var(--accent-color) !important;
-	font-size: 2.5vw !important;
-	font-weight: 500 !important;
-	will-change: transform !important;
-	display: inline-block !important;
-	margin-left: 10px;
-	text-shadow: 2px 2px 2px rgba(30, 30, 30, .5) !important;
+#healthValue {
+	color: var(--accent-color);
+	font-size: 5vh;
+	font-weight: 500;
+	text-align: center;
+	text-shadow: 2px 2px 2px rgba(30, 30, 30, .5);
+	margin-top: 0;
 }
 
-#inGameUI #bottomLeftHolder #maxHP {
-	color: rgba(255, 255, 255, .8);
-	font-size: 0 !important
+#maxHP {
+	display: none;
 }
 
-#inGameUI #topLeftHolder #timerVal {
+#timerVal {
 	bottom: 0 !important;
-	color: #fdfdfd;
+	color: #fff;
 	font-size: 1.75vw !important;
 	padding-left: .25vw !important;
 	position: relative !important;
@@ -1005,7 +1004,7 @@ a:visited {
 }
 
 #mapName {
-	color: #fdfdfd;
+	color: #fff;
 	float: right;
 	font-size: 18px;
 	margin: 0;
@@ -1259,12 +1258,7 @@ a:visited {
 }
 
 #challIcon {
-	position: relative !important;
-	top: .125vw !important;
-	width: 1.5vw !important;
-	height: 1.5vw !important;
-	image-rendering: pixelated !important;
-	display: none !important
+	display: none;
 }
 
 #challIcon2_left,
@@ -1300,7 +1294,7 @@ a:visited {
 }
 
 #recTimer {
-	color: #fdfdfd !important;
+	color: #fff !important;
 	font-size: .8vw !important;
 	vertical-align: top !important
 }
@@ -1446,7 +1440,7 @@ span.gray {
 }
 
 #voiceIcon {
-	color: #fdfdfd !important;
+	color: #fff !important;
 	font-size: 1.6vw !important
 }
 
@@ -1805,7 +1799,7 @@ span.gray {
 .selctBtn {
 	background-color: #570030 !important;
 	border-radius: 0vw !important;
-	color: #fdfdfd !important;
+	color: #fff !important;
 	cursor: pointer !important;
 	font-size: .825vw !important;
 	margin-left: .25vw !important;
@@ -1854,7 +1848,7 @@ span.gray {
 .skinCard {
 	background-color: rgba(0, 0, 0, .3) !important;
 	border-radius: 0vw !important;
-	color: #fdfdfd;
+	color: #fff;
 	display: inline-block;
 	font-size: .825vw !important;
 	/* height: fit-content !important; */
@@ -1910,7 +1904,7 @@ span.gray {
 }
 
 .slider:before {
-	background-color: #fdfdfd !important;
+	background-color: #fff !important;
 	border-radius: 0 !important;
 	bottom: .15vw !important;
 	content: "" !important;
@@ -1957,7 +1951,7 @@ span.gray {
 .sliderVal {
 	background: var(--accent-color) !important;
 	border-radius: 0 !important;
-	color: #fdfdfd !important;
+	color: #fff !important;
 	float: right !important;
 	font-size: .75vw !important;
 	line-height: 1vh !important;
@@ -1995,7 +1989,7 @@ span.gray {
 .sliderValsub {
 	background: var(--accent-color) !important;
 	border-radius: 0vw !important;
-	color: #fdfdfd !important;
+	color: #fff !important;
 	float: right !important;
 	font-size: .75vw !important;
 	line-height: .8vw !important;
@@ -2057,7 +2051,7 @@ span.gray {
 }
 
 .xpBarV {
-	color: #fdfdfd !important;
+	color: #fff !important;
 	font-size: .75vw !important;
 	height: 100% !important;
 	left: 0 !important;
@@ -2280,7 +2274,7 @@ span.settText.floatR {
 .rankedType {
 	position: absolute;
 	font-size: 2vw;
-	color: #fdfdfd;
+	color: #fff;
 	line-height: 3vw;
 	z-index: 1;
 	width: 100%;
@@ -2298,7 +2292,7 @@ span.settText.floatR {
 .rankedELOTxt {
 	position: absolute;
 	font-size: 1.25vw;
-	color: #fdfdfd;
+	color: #fff;
 	z-index: 1;
 	width: 100%;
 	bottom: 2.5vh;
@@ -2364,22 +2358,25 @@ span.settText.floatR {
 
 #ammoDisplay {
 	background-color: transparent;
-	width: 126px;
-	padding: 0;
-	border-radius: 0 ;
+	letter-spacing: 0;
+	width: 100px;
+	height: 65px;
+	border-radius: 0;
 	position: fixed;
-	right: 30%;
-	bottom: calc(25% + 9px);
+	right: 31%;
+	bottom: 25%;
+	padding: 0;
+    padding-top: 0;
+    padding-left: 0;
 }
 
 #ammoVal {
-	color: #fdfdfd !important;
-	text-shadow: 2px 2px 2px rgba(30, 30, 30, .5) !important;
-	font-size: 2.5vw !important;
-	font-weight: 500 !important;
-	display: inline-block !important;
-	margin-top: 3px;
-	margin-left: 5px;
+	color: #fff ;
+	text-shadow: 2px 2px 2px rgba(30, 30, 30, .5) ;
+	font-size: 5vh ;
+	font-weight: 500 ;
+	display: inline-block ;
+	margin-left: 12px;
 }
 
 #ammoMax {
@@ -2388,6 +2385,10 @@ span.settText.floatR {
 
 #ammoIcon {
 	display: none;
+}
+
+#reloadMsg {
+	background: transparent !important;
 }
 
 #chatInput {
