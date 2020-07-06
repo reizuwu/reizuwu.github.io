@@ -1,4 +1,4 @@
-/* Updated 5 July 2020 */
+/* Updated 6 July 2020 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
@@ -351,8 +351,7 @@ input[type=color] {
 }
 
 #timerIcon {
-	width: 0;
-	height: 0;
+	display: none;
 }
 
 #fpsDisplay,
@@ -1243,18 +1242,8 @@ a:visited {
 	width: 78% !important
 }
 
-.healthBarSeg {
-	width: 2vw !important;
-	display: none !important;
-	margin-right: 0 !important;
-	height: 100% !important;
-	background-color: rgba(0, 0, 0, .5) !important;
-	border-radius: 0 !important
-}
-
-.hpBSeg {
-	height: 100% !important;
-	border-radius: 0 !important
+#healthBar {
+	display: none;
 }
 
 #challIcon {
@@ -1504,9 +1493,6 @@ span.gray {
 	z-index: 9;
 	color: var(--accent-color);
 	font-size: 1.25vw;
-}
-
-#instructions {
 	animation: none;
 	-webkit-animation: none
 }
@@ -2375,7 +2361,6 @@ span.settText.floatR {
 	text-shadow: 2px 2px 2px rgba(30, 30, 30, .5) ;
 	font-size: 5vh ;
 	font-weight: 500 ;
-	display: inline-block ;
 	margin-left: 12px;
 }
 
@@ -2400,7 +2385,7 @@ span.settText.floatR {
 }
 
 .chatItem {
-	border-radius: 0px;
+	border-radius: 0;
 	background-color:var(--ingame-bg-color)
 }
 
