@@ -1,4 +1,4 @@
-/* Updated 6 July 2020 */
+/* Updated 9 July 2020 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
@@ -12,6 +12,14 @@
 	font-family: Inter !important;
 	font-size: 1vw;
 	font-weight: 400;
+}
+
+[style*="color:#eb5656"] {
+	color: var(--accent-color) !important;
+}
+
+[style*="color:#9eeb56"] {
+	color: rgba(255,255,255,.6) !important;
 }
 
 .settingPreset {
@@ -93,7 +101,6 @@ input[type=color] {
 #menuVoteHolder {
 	top: 220px
 }
-
 
 #matchVoteHolder {
 	display: none;
@@ -334,8 +341,7 @@ input[type=color] {
 	font-size: 1vw !important
 }
 
-.menuSelector,
-.menuSelectorHeader {
+.menuSelector, .menuSelectorHeader {
 	font-size: 1vw
 }
 
@@ -354,9 +360,12 @@ input[type=color] {
 	display: none;
 }
 
-#fpsDisplay,
-#pingDisplay {
-	font-size: 1vw
+#fpsDisplay, #pingDisplay {
+	font-size: 1vw;
+}
+
+#pingText {
+	font-size: 1vw;
 }
 
 #ingameFPS {
@@ -380,12 +389,13 @@ input[type=color] {
 	background-color: var(--accent-color)
 }
 
-.tScoreC.you{ 
+.tScoreC.you {
 	background-color: #fff
 }
 
 #leaderDisplay {
-	width: fit-content
+	border-radius: 0;
+	background-color: var(--ingame-bg-color);
 }
 
 #leaderCopy {
@@ -401,30 +411,44 @@ input[type=color] {
 	color: rgba(255, 255, 255, .7);
 	font-size: 23px;
 	background-color: rgba(0, 0, 0, .2);
-	border-radius: 0px
+	border-radius: 0;
 }
 
 .leaderCounter {
 	display: flex;
-	font-size: 1vw
+	font-size: 1vw;
 }
 
 .leaderScore {
-	font-size: 1vw
+	font-size: 1vw;
+}
+
+.newLeaderContainer {
+	border-radius: 0;
+	background-color: var(--ingame-bg-color);
+}
+
+.newLeaderName,.newLeaderNameM,.newLeaderNameF {
+    color: var(--accent-color);
+}
+
+.kfItem {
+	border-radius: 0;
+	background-color: var(--ingame-bg-color);
 }
 
 .topRightCounters {
 	float: right;
-	clear: right
+	clear: right;
 }
 
 .weaponItem {
-	margin-top: 0
+	margin-top: 0;
 }
 
 .weaponItem img {
 	height: auto;
-	width: 8vw
+	width: 8vw;
 }
 
 #updateTwitchUser {
@@ -568,8 +592,7 @@ tr td:nth-child(2) {
 	line-height: 2vw
 }
 
-.serverPCount,
-.serverRegion {
+.serverPCount, .serverRegion {
 	color: inherit;
 	float: right
 }
@@ -633,8 +656,7 @@ tr td:nth-child(2) {
 	font-size: 1.5vw !important
 }
 
-#showHideFilter,
-#showHideToken {
+#showHideFilter, #showHideToken {
 	font-size: .75vw !important;
 	padding: .25vw !important;
 	background: #8e8e8e;
@@ -665,17 +687,11 @@ tr td:nth-child(2) {
 	border-radius: 0%
 }
 
-#leaderDisplay {
-	border-radius: 0px;
-	background-color: var(--ingame-bg-color);
-}
-
 #scoreTextHolder {
 	width: fit-content !important
 }
 
-#gameNameHolder,
-#uiBase #mapInfoHolder {
+#gameNameHolder, #uiBase #mapInfoHolder {
 	display: none !important
 }
 
@@ -786,8 +802,7 @@ tr td:nth-child(2) {
 	color: var(--accent-color)
 }
 
-#claimImg,
-#merchImg {
+#claimImg, #merchImg {
 	height: 7vh
 }
 
@@ -806,9 +821,9 @@ tr td:nth-child(2) {
 	left: 30%;
 	bottom: 25%;
 	padding: 0;
-    margin-bottom: 0;
-    padding-right: 0;
-    padding-left: 0;
+	margin-bottom: 0;
+	padding-right: 0;
+	padding-left: 0;
 	align-items: center;
 }
 
@@ -821,7 +836,7 @@ tr td:nth-child(2) {
 	font-size: 5vh;
 	font-weight: 500;
 	text-align: center;
-	text-shadow: 2px 2px 2px rgba(30, 30, 30, .5);
+	text-shadow: 3px 3px 2px rgba(30, 30, 30, .5);
 	margin-top: 0;
 }
 
@@ -839,7 +854,7 @@ tr td:nth-child(2) {
 	will-change: transform !important
 }
 
-#inGameUI #topRight {
+#topRight {
 	position: absolute !important;
 	right: 1vw !important;
 	text-align: right !important;
@@ -847,9 +862,7 @@ tr td:nth-child(2) {
 	z-index: 10 !important
 }
 
-#inGameUI #topRight #deathCount #deathsIcon,
-#inGameUI #topRight #killCount #killsIcon,
-#inGameUI #topRight #streakCount #streakIcon {
+#deathsIcon, #killsIcon, #streakIcon {
 	height: 2vw !important;
 	width: 2vw !important
 }
@@ -858,36 +871,25 @@ tr td:nth-child(2) {
 	font-size: 2vw !important
 }
 
-#inGameUI #topRight #deathCount #deathsVal,
-#inGameUI #topRight #killCount #killsVal,
-#inGameUI #topRight #livesCount #livesDisp,
-#inGameUI #topRight #streakCount #streakVal {
+#scoreCount .material-icons {
+	font-size: 2vw !important
+}
+
+#deathsVal, #killsVal, #livesDisp, #streakVal, #myScoreVal {
+	color: #fff !important;
 	bottom: .25vw !important;
 	font-size: 1.5vw;
 	position: relative
 }
 
-#inGameUI #topRight #deathCount,
-#inGameUI #topRight #killCount,
-#inGameUI #topRight #livesCount,
-#inGameUI #topRight #streakCount {
+#deathCount, #killCount, #livesCount, #streakCount, #scoreCount {
 	background-color: var(--ingame-bg-color);
-	border-radius: 0vw !important;
+	border-radius: 0;
 	margin-top: .5vw !important;
 	padding: .5vw !important
 }
 
-#leaderContainer2 {
-	color: #fff;
-	text-align: left
-}
-
-.leaderName,
-.leaderName span,
-.leaderNameF,
-.leaderNameF span,
-.leaderNameM,
-.leaderNameM span {
+.leaderName, .leaderName span, .leaderNameF, .leaderNameF span, .leaderNameM, .leaderNameM span {
 	font-size: 1vw;
 	max-width: 25vw;
 	overflow: hidden
@@ -895,24 +897,6 @@ tr td:nth-child(2) {
 
 .leaderName {
 	color: var(--accent-color) !important;
-}
-
-#leaderDisplay2 {
-	background-color: rgba(0, 0, 0, .5);
-	border-radius: 0px;
-	color: rgba(255, 255, 255, .7);
-	float: right;
-	font-size: 23px;
-	height: 230px;
-	left: 12px;
-	overflow-y: scroll;
-	padding: 10px;
-	pointer-events: all;
-	position: absolute;
-	text-align: left;
-	top: 255px;
-	width: 420px;
-	z-index: 3
 }
 
 .terms {
@@ -967,7 +951,7 @@ a:visited {
 	background-color: transparent !important;
 	color: #fff;
 	filter: none;
-    -webkit-filter: none;
+	-webkit-filter: none;
 }
 
 .redVouchBtn {
@@ -1080,7 +1064,6 @@ a:visited {
 	height: 27vh;
 	top: auto !important
 }
-
 
 #menuLevelIcon {
 	display: none;
@@ -1208,15 +1191,15 @@ a:visited {
 }
 
 .menuItem {
-	background:rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0);
 }
 
 .menuItem:hover {
-	background:rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0);
 }
 
 .menuItem:active {
-	background:rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0);
 }
 
 .menuItemTitle {
@@ -1250,8 +1233,7 @@ a:visited {
 	display: none;
 }
 
-#challIcon2_left,
-#normalIcon2_left {
+#challIcon2_left, #normalIcon2_left {
 	float: left;
 	height: 36px;
 	position: relative;
@@ -1259,8 +1241,7 @@ a:visited {
 	top: 22px
 }
 
-#challIcon2_right,
-#normalIcon2_right {
+#challIcon2_right, #normalIcon2_right {
 	float: left;
 	height: 36px;
 	left: 8px;
@@ -1268,8 +1249,7 @@ a:visited {
 	top: 22px
 }
 
-#challIconHolder,
-#normalIconHolder {
+#challIconHolder, #normalIconHolder {
 	position: absolute;
 	top: 540px
 }
@@ -1288,8 +1268,7 @@ a:visited {
 	vertical-align: top !important
 }
 
-#signedInHeaderBar,
-#signedOutHeaderBar {
+#signedInHeaderBar, #signedOutHeaderBar {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 
@@ -1328,8 +1307,7 @@ span.gray {
 	opacity: .5
 }
 
-.jrAccept:hover,
-.jrReject:hover {
+.jrAccept:hover, .jrReject:hover {
 	opacity: 1
 }
 
@@ -1444,7 +1422,7 @@ span.gray {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-radius: 0;
-	background-color: rgb(15, 15, 15, .2);
+	background-color: transparent !important;
 }
 
 ::-webkit-scrollbar {
@@ -1777,8 +1755,8 @@ span.gray {
 	color: #fff
 }
 
-#mpSrch,#mdSrch {
-	background-color: rgba(0,0,0,.3) !important;
+#mpSrch, #mdSrch {
+	background-color: rgba(0, 0, 0, .3) !important;
 	border-radius: 0
 }
 
@@ -1818,8 +1796,7 @@ span.gray {
 	width: 100%
 }
 
-.settName,
-.settNameSmall {
+.settName, .settNameSmall {
 	clear: both !important;
 	color: var(--accent-color) !important;
 	font-size: 1vw !important;
@@ -2098,8 +2075,7 @@ input:checked+.optCheck {
 	background-color: rgba(0, 0, 0, .3) !important;
 }
 
-#menuKRCount,
-span.floatR {
+#menuKRCount, span.floatR {
 	font-size: 1vw !important
 }
 
@@ -2328,7 +2304,7 @@ span.settText.floatR {
 
 .joinQueue:hover {
 	height: 60px;
-    margin-top: 12px;
+	margin-top: 12px;
 	box-shadow: none;
 	color: #fff;
 }
@@ -2352,15 +2328,15 @@ span.settText.floatR {
 	right: 31%;
 	bottom: 25%;
 	padding: 0;
-    padding-top: 0;
-    padding-left: 0;
+	padding-top: 0;
+	padding-left: 0;
 }
 
 #ammoVal {
-	color: #fff ;
-	text-shadow: 2px 2px 2px rgba(30, 30, 30, .5) ;
-	font-size: 5vh ;
-	font-weight: 500 ;
+	color: #fff;
+	text-shadow: 3px 3px 2px rgba(30, 30, 30, .5);
+	font-size: 5vh;
+	font-weight: 500;
 	margin-left: 12px;
 }
 
@@ -2386,7 +2362,7 @@ span.settText.floatR {
 
 .chatItem {
 	border-radius: 0;
-	background-color:var(--ingame-bg-color)
+	background-color: var(--ingame-bg-color)
 }
 
 #weapDisplay {
