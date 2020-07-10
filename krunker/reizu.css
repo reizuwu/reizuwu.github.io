@@ -22,6 +22,12 @@
 	color: rgba(255,255,255,.6) !important;
 }
 
+#uiBase {
+	height: 100% !important;
+	width: 100% !important;
+	transform: scale(1) !important
+}
+
 .settingPreset {
 	display: none;
 }
@@ -64,12 +70,6 @@ input:checked+.sliderCent:before {
 	text-align: center
 }
 
-#uiBase {
-	height: 100% !important;
-	width: 100% !important;
-	transform: scale(1) !important
-}
-
 #1 * {
 	pointer-events: none !important;
 }
@@ -78,13 +78,8 @@ input:checked+.sliderCent:before {
 	display: none !important;
 }
 
-#uiBase.onMenu #aHolder {
-	top: auto !important;
-	bottom: 13vh !important;
-	right: 0 !important;
-	left: 0 !important;
-	z-index: 10;
-	pointer-events: none !important
+#braveWarning {
+	display: none !important;
 }
 
 input {
@@ -356,6 +351,13 @@ input[type=color] {
 	position: absolute
 }
 
+#timerDisplay {
+	text-align: center !important;
+	width: 85px;
+	border-radius: 0;
+	background-color: var(--ingame-bg-color);
+}
+
 #timerIcon {
 	display: none;
 }
@@ -369,15 +371,15 @@ input[type=color] {
 }
 
 #ingameFPS {
-	color: var(--accent-color) !important
+	color: var(--accent-color) !important;
 }
 
 #pingIcon {
-	color: var(--accent-color) !important
+	color: var(--accent-color) !important;
 }
 
 #pingDisplay .material-icons {
-	font-size: 1vw
+	font-size: 2vh;
 }
 
 #teamScores {
@@ -842,16 +844,6 @@ tr td:nth-child(2) {
 
 #maxHP {
 	display: none;
-}
-
-#timerVal {
-	bottom: 0 !important;
-	color: #fff;
-	font-size: 1.75vw !important;
-	padding-left: .25vw !important;
-	position: relative !important;
-	transform: translateZ(0) !important;
-	will-change: transform !important
 }
 
 #topRight {
@@ -1330,42 +1322,6 @@ span.gray {
 #subLogoButtons>.button:hover {
 	-webkit-transform: none;
 	transform: none;
-}
-
-#timerDisplay {
-	border-radius: 0px;
-	background-color: var(--ingame-bg-color);
-}
-
-#timerDisplay2 {
-	border-radius: 0px;
-	display: inline-block;
-	left: 12px;
-	margin-bottom: 10px;
-	margin-right: 10px;
-	padding: 10px 20px 10px 10px;
-	position: absolute;
-	text-align: left;
-	top: 190px;
-	transform: translateZ(0);
-	vertical-align: top;
-	width: 412px;
-	will-change: transform;
-	z-index: 3
-}
-
-#timerIcon2 {
-	height: 35px;
-	image-rendering: crisp-edges;
-	width: 35px
-}
-
-#timerVal2 {
-	color: #fff;
-	font-size: 24px;
-	padding-left: 3px;
-	transform: translateZ(0);
-	will-change: transform
 }
 
 #uiBase.onMenu #spectButton {
