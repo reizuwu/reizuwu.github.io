@@ -1,25 +1,38 @@
-/* Updated 9 July 2020 */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* Updated 10 July 2020 */
 
 :root {
 	--accent-color: #dfafff;
 	--ingame-bg-color: rgba(15, 15, 15, .2);
 }
 
+@font-face {
+	font-family: gamefont;
+	src: url(https://fonts.gstatic.com/s/inter/v2/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2);
+}
+
+@font-face {
+	font-family: hpammo;
+	src: url('https://reizu.moe/fonts/Renogare.ttf');
+}
+
 * {
 	color: var(--accent-color);
-	font-family: Inter !important;
-	font-size: 1vw;
-	font-weight: 400;
 }
 
 [style*="color:#eb5656"] {
 	color: var(--accent-color) !important;
 }
 
+[style*="color:#2196F3"] {
+	color: var(--accent-color) !important;
+}
+
 [style*="color:#9eeb56"] {
-	color: rgba(255,255,255,.6) !important;
+	color: rgba(255, 255, 255, .6) !important;
+}
+
+[style*="margin-top:10px;font-size:20px;color:rgba(255,255,255,0.4)"] {
+	display: none !important;
 }
 
 #uiBase {
@@ -430,8 +443,8 @@ input[type=color] {
 	background-color: var(--ingame-bg-color);
 }
 
-.newLeaderName,.newLeaderNameM,.newLeaderNameF {
-    color: var(--accent-color);
+.newLeaderName, .newLeaderNameM, .newLeaderNameF {
+	color: var(--accent-color);
 }
 
 .kfItem {
@@ -835,7 +848,8 @@ tr td:nth-child(2) {
 
 #healthValue {
 	color: var(--accent-color);
-	font-size: 5vh;
+	font-family: hpammo;
+	font-size: 48px;
 	font-weight: 500;
 	text-align: center;
 	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
@@ -1426,7 +1440,7 @@ span.gray {
 	position: absolute;
 	z-index: 9;
 	color: var(--accent-color);
-	font-size: 1.25vw;
+	font-size: 24px;
 	animation: none;
 	-webkit-animation: none
 }
@@ -1702,6 +1716,10 @@ span.gray {
 	box-shadow: none !important;
 }
 
+#profilePicM {
+	border-radius: 0;
+}
+
 .searchBtn {
 	background-color: rgba(0, 0, 0, 0);
 	color: var(--accent-color)
@@ -1757,7 +1775,6 @@ span.gray {
 	color: var(--accent-color) !important;
 	font-size: 1vw !important;
 	margin-top: .75vh !important;
-	width: 100%
 }
 
 .wepLink {
@@ -1811,7 +1828,7 @@ span.gray {
 
 .slider {
 	-webkit-transition: .4s !important;
-	background-color: rgba(0, 0, 0, .3)!important;
+	background-color: rgba(0, 0, 0, .3) !important;
 	border-radius: 0 !important;
 	bottom: 0 !important;
 	cursor: pointer !important;
@@ -1832,6 +1849,16 @@ span.gray {
 	position: absolute !important;
 	transition: .4s !important;
 	width: 1.1vw !important
+}
+
+.slider2 {
+	background-color: rgba(0, 0, 0, .3) !important;
+	border-radius: 0 !important;
+}
+
+.slider2:before {
+	background-color: #fff !important;
+	border-radius: 0 !important;
 }
 
 .sliderM {
@@ -1982,7 +2009,6 @@ span.gray {
 
 a {
 	cursor: pointer !important;
-	font-size: 1vw !important;
 	pointer-events: all !important;
 	text-decoration: none !important;
 	text-shadow: none !important
@@ -1998,6 +2024,10 @@ input:checked+.slider:before {
 
 input:checked+.sliderSml:before {
 	transform: translateX(1.2vw) !important
+}
+
+input:checked+.slider2 {
+	background-color: var(--accent-color) !important;
 }
 
 .hostToggle {
@@ -2080,10 +2110,6 @@ input:checked+.sliderSml {
 
 input:focus+.sldierSml {
 	box-shadow: 0 0 1px var(--accent-color);
-}
-
-input:checked+.slider {
-	background-color: var(--accent-color);
 }
 
 #customizeButton {
@@ -2290,10 +2316,11 @@ span.settText.floatR {
 
 #ammoVal {
 	color: #fff;
-	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
-	font-size: 5vh;
+	font-family: hpammo;
+	font-size: 48px;
 	font-weight: 500;
 	margin-left: 12px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
 #ammoMax {
