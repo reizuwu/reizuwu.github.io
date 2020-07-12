@@ -1094,6 +1094,8 @@ a:visited {
 #endTable {
 	left: 50% !important;
 	border-radius: 0px;
+	backdrop-filter: blur(5px);
+	background-color: transparent;
 }
 
 .endTableN {
