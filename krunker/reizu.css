@@ -1,4 +1,4 @@
-/* Updated 11 July 2020 */
+/* Updated 12 July 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -12,7 +12,7 @@
 
 @font-face {
 	font-family: hpammo;
-	src: url('https://reizu.moe/fonts/Renogare.ttf');
+	src: url(https://reizu.moe/fonts/Renogare.ttf);
 }
 
 * {
