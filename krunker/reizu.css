@@ -1,4 +1,4 @@
-/* Updated 10 July 2020 */
+/* Updated 11 July 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -2347,7 +2347,6 @@ span.settText.floatR {
 
 .chatItem {
 	border-radius: 0;
-	background-color: var(--ingame-bg-color)
 }
 
 #weapDisplay {
