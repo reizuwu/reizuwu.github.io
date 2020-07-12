@@ -376,11 +376,11 @@ input[type=color] {
 }
 
 #fpsDisplay, #pingDisplay {
-	font-size: 1vw;
+	font-size: 18px;
 }
 
 #pingText {
-	font-size: 1vw;
+	font-size: 18px;
 }
 
 #ingameFPS {
@@ -392,7 +392,7 @@ input[type=color] {
 }
 
 #pingDisplay .material-icons {
-	font-size: 2vh;
+	font-size: 20px;
 }
 
 #teamScores {
@@ -2350,5 +2350,6 @@ span.settText.floatR {
 }
 
 #weapDisplay {
-	bottom: 40vh !important;
+	bottom: 50%;
+	transform: translateY(50%);
 }
