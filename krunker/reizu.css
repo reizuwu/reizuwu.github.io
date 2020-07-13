@@ -670,11 +670,6 @@ tr td:nth-child(2) {
 	text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020, -3px -3px 0 #202020, 3px -3px 0 #202020, -3px 3px 0 #202020, 3px 3px 0 #202020
 }
 
-.settName.b {
-	margin-top: 3.5vh !important;
-	font-size: 1.5vw !important
-}
-
 #showHideFilter, #showHideToken {
 	font-size: .75vw !important;
 	padding: .25vw !important;
@@ -1182,24 +1177,6 @@ a:visited {
 	width: 4.5vw;
 	height: 4.5vw;
 	border: none
-}
-
-#menuWindow2 {
-	background-color: #171717 !important;
-	border-radius: 0% !important;
-	bottom: 39vh !important;
-	box-shadow: 0 .5vw 0 0 #070707 !important;
-	display: inline-block !important;
-	left: 30.25vw !important;
-	max-height: calc(100% - 52%) !important;
-	overflow-y: auto !important;
-	padding: 1% !important;
-	pointer-events: auto !important;
-	position: absolute !important;
-	text-align: left !important;
-	transform: none !important;
-	width: 37.66vw !important;
-	z-index: 2 !important
 }
 
 #menuItemContainer {
@@ -1762,16 +1739,12 @@ span.gray {
 }
 
 .setHed {
-	color: #fff !important;
-	font-size: 1.125vw !important;
-	margin-top: 1.25vw !important
+	color: #fff;
 }
 
 .settLabel {
-	clear: both;
-	float: right;
-	font-size: 1vw !important;
-	color: var(--accent-color)
+	font-size: 18px;
+	color: var(--accent-color);
 }
 
 .settSubName {
@@ -1784,10 +1757,9 @@ span.gray {
 }
 
 .settName, .settNameSmall {
-	clear: both !important;
-	color: var(--accent-color) !important;
-	font-size: 1vw !important;
-	margin-top: .75vh !important;
+	color: var(--accent-color);
+	font-size: 18px;
+	margin-top: 10px;
 }
 
 .wepLink {
