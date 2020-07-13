@@ -31,6 +31,10 @@
 	color: rgba(255, 255, 255, .6) !important;
 }
 
+[style*="font-size:20px;color:#fff;display:inline-block;"] {
+	color: var(--accent-color) !important;
+}
+
 [style*="margin-top:10px;font-size:20px;color:rgba(255,255,255,0.4)"] {
 	display: none !important;
 }
@@ -906,23 +910,28 @@ tr td:nth-child(2) {
 }
 
 .terms {
-	color: var(--accent-color)
+	color: var(--accent-color);
+}
+
+.terms:hover {
+	text-decoration: none;
+	color: #fff;
 }
 
 .grey {
-	color: var(--accent-color) !important
+	color: var(--accent-color) !important;
 }
 
 .grey:active {
-	color: var(--accent-color) !important
+	color: var(--accent-color) !important;
 }
 
 .grey:visited {
-	color: var(--accent-color) !important
+	color: var(--accent-color) !important;
 }
 
 a {
-	color: var(--accent-color)
+	color: var(--accent-color);
 }
 
 a:active {
@@ -1294,7 +1303,7 @@ a:visited {
 	position: absolute !important;
 	top: auto !important;
 	bottom: 0% !important;
-	left: 50vw;
+	left: 50%;
 	right: auto !important;
 	transform: translate(-50%, -50%) !important;
 	text-align: center
@@ -1330,9 +1339,7 @@ span.gray {
 }
 
 #subLogoButtons>.button {
-	float: left !important;
-	font-size: 1vw !important;
-	height: 4.5vh
+	font-size: 18px !important;
 }
 
 #subLogoButtons>.button:hover {
