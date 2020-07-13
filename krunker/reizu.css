@@ -1223,6 +1223,10 @@ a:visited {
 	color: var(--accent-color) !important
 }
 
+#menuBtnChall {
+	font-size: 16px !important;
+}
+
 #merchHolder {
 	display: none !important;
 	position: absolute !important
