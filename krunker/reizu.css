@@ -1,4 +1,4 @@
-/* Updated 12 July 2020 */
+/* Updated 13 July 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -69,6 +69,7 @@
 
 .serverHeader {
 	background-color: transparent;
+	position: relative;
 }
 
 .customImage {
@@ -431,15 +432,6 @@ input[type=color] {
 	font-size: 23px;
 	background-color: rgba(0, 0, 0, .2);
 	border-radius: 0;
-}
-
-.leaderCounter {
-	display: flex;
-	font-size: 1vw;
-}
-
-.leaderScore {
-	font-size: 1vw;
 }
 
 .newLeaderContainer {
@@ -859,49 +851,19 @@ tr td:nth-child(2) {
 	display: none;
 }
 
-#topRight {
-	position: absolute !important;
-	right: 1vw !important;
-	text-align: right !important;
-	top: 1vw !important;
-	z-index: 10 !important
-}
-
-#deathsIcon, #killsIcon, #streakIcon {
-	height: 2vw !important;
-	width: 2vw !important
-}
-
-#livesCount .material-icons {
-	font-size: 2vw !important
-}
-
-#scoreCount .material-icons {
-	font-size: 2vw !important
-}
-
 #deathsVal, #killsVal, #livesDisp, #streakVal, #myScoreVal {
-	color: #fff !important;
-	bottom: .25vw !important;
-	font-size: 1.5vw;
-	position: relative
+	bottom: 7px;
+	position: relative;
 }
 
 #deathCount, #killCount, #livesCount, #streakCount, #scoreCount {
 	background-color: var(--ingame-bg-color);
 	border-radius: 0;
-	margin-top: .5vw !important;
-	padding: .5vw !important
-}
-
-.leaderName, .leaderName span, .leaderNameF, .leaderNameF span, .leaderNameM, .leaderNameM span {
-	font-size: 1vw;
-	max-width: 25vw;
-	overflow: hidden
+	padding: 7px;
 }
 
 .leaderName {
-	color: var(--accent-color) !important;
+	color: var(--accent-color);
 }
 
 .terms {
@@ -1007,7 +969,7 @@ a:visited {
 }
 
 #menuAccountUsername {
-	font-size: 1vw !important
+	font-size: 16px;
 }
 
 #menuBtnBrowser {
@@ -1080,7 +1042,7 @@ a:visited {
 }
 
 #menuLevelText {
-	font-size: 1vw;
+	font-size: 16px;
 }
 
 .teamTotals {
@@ -2047,7 +2009,7 @@ input:checked+.optCheck {
 }
 
 #menuKRCount, span.floatR {
-	font-size: 1vw !important
+	font-size: 16px;
 }
 
 .settText {
