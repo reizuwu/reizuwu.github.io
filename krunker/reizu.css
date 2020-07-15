@@ -1,4 +1,4 @@
-/* Updated 13 July 2020 */
+/* Updated 14 July 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -1046,26 +1046,26 @@ a:visited {
 }
 
 .teamTotals {
-	border-radius: 0px;
+	backdrop-filter: blur(5px);
+	border-radius: 0;
+	background-color: transparent;
 }
 
 .teamTotalN0 {
-	color: #fff
+	color: #fff;
 }
 
 .teamTotalN1 {
-	color: var(--accent-color)
+	color: var(--accent-color);
 }
 
 #endTable {
-	left: 50% !important;
-	border-radius: 0px;
-	backdrop-filter: blur(5px);
+	border-radius: 0;
 	background-color: transparent;
 }
 
 .endTableN {
-	color: var(--accent-color)
+	color: var(--accent-color);
 }
 
 #endTimer {
@@ -1075,7 +1075,87 @@ a:visited {
 }
 
 .endAHolder {
-	display: none !important
+	display: none !important;
+}
+
+.endCard {
+	left: 50% !important;
+	backdrop-filter: blur(5px);
+	background-color: transparent;
+}
+
+#tabHolder {
+	border-radius: 0;
+	background-color: transparent;
+}
+
+.tabHeader {
+	color: var(--accent-color);
+}
+
+.tabHeader:hover {
+	color: #fff;
+	border-bottom: none;
+}
+
+.tabHeader.selected {
+	color: #fff;
+	border-bottom: none;
+}
+
+.endSection {
+	background-color: transparent;
+}
+
+.gfSection {
+	background-color: transparent;
+}
+
+.modeStatus {
+	color: var(--accent-color) !important;
+}
+
+.fundsVal {
+	color: #fff;
+}
+
+#kdLayout {
+	background-color: transparent;
+	border: none;
+}
+
+.crStat {
+	background-color: transparent;
+	border: none;
+}
+
+.crLabel {
+	color: #fff;
+}
+
+.crVal {
+	color: var(--accent-color);
+}
+
+.xpRnk {
+	width: 0;
+}
+
+.xpLvl {
+	color: #fff;
+}
+
+.xpEndBar {
+	border-radius: 0;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.xpEndBarB {
+	background-color: var(--accent-color);
+}
+
+#medalTable {
+	background-color: transparent;
 }
 
 #menuMiniProfilePic {
