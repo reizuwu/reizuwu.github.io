@@ -116,12 +116,7 @@ input[type=color] {
 }
 
 #matchVoteHolder {
-	display: none;
-	height: 10vw !important;
-	width: auto !important;
-	position: absolute;
-	border-collapse: collapse;
-	background-color: rgba(0, 0, 0, 0) !important
+	background-color: transparent;
 }
 
 #matchVoteHolder.isRanked {
