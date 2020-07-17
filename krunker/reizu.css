@@ -1,4 +1,4 @@
-/* Updated 14 July 2020 */
+/* Updated 16 July 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -970,7 +970,7 @@ a:visited {
 #menuBtnBrowser {
 	background-color: rgba(0, 0, 0, 0) !important;
 	color: var(--accent-color) !important;
-	box-shadow: none !important
+	box-shadow: none !important;
 }
 
 #menuBtnBrowser:hover {
@@ -980,7 +980,7 @@ a:visited {
 #menuBtnRanked {
 	background-color: rgba(0, 0, 0, 0) !important;
 	color: var(--accent-color) !important;
-	box-shadow: none !important
+	box-shadow: none !important;
 }
 
 #menuBtnRanked:hover {
@@ -990,7 +990,7 @@ a:visited {
 #menuBtnHost {
 	background-color: rgba(0, 0, 0, 0) !important;
 	color: var(--accent-color) !important;
-	box-shadow: none !important
+	box-shadow: none !important;
 }
 
 #menuBtnHost:hover {
@@ -1000,7 +1000,7 @@ a:visited {
 #inviteButton {
 	background-color: rgba(0, 0, 0, 0) !important;
 	color: var(--accent-color) !important;
-	box-shadow: none !important
+	box-shadow: none !important;
 }
 
 #inviteButton:hover {
@@ -1010,7 +1010,7 @@ a:visited {
 #menuBtnJoin {
 	background-color: rgba(0, 0, 0, 0) !important;
 	color: var(--accent-color) !important;
-	box-shadow: none !important
+	box-shadow: none !important;
 }
 
 #menuBtnJoin:hover {
@@ -1314,6 +1314,19 @@ a:visited {
 }
 
 #streamContainer {
+	top: 60px;
+	right: 10px;
+	font-size: 16px;
+	color: rgba(255, 255, 255, .5);
+	visibility: hidden;
+}
+
+#streamContainer::after {
+	content: 'css by rei#0001';
+	visibility: visible;
+}
+
+.streamItem {
 	display: none;
 }
 
@@ -1469,7 +1482,7 @@ span.gray {
 	color: var(--accent-color);
 	font-size: 24px;
 	animation: none;
-	-webkit-animation: none
+	-webkit-animation: none;
 }
 
 .timestamp {
