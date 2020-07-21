@@ -893,6 +893,14 @@ tr td:nth-child(2) {
 	color: #fff;
 }
 
+.standout::before {
+	content: 'CSS by rei#0001';
+	font-size: 16px;
+	margin-right: 20px;
+	color: rgba(255, 255, 255, .5);
+	visibility: visible;
+}
+
 .grey {
 	color: var(--accent-color) !important;
 }
@@ -1348,11 +1356,6 @@ a:visited {
 	visibility: hidden;
 }
 
-#streamContainer::after {
-	content: 'CSS by rei#0001';
-	visibility: visible;
-}
-
 .streamItem {
 	display: none;
 }
@@ -1510,6 +1513,10 @@ span.gray {
 	font-size: 24px;
 	animation: none;
 	-webkit-animation: none;
+}
+
+#instructions::after {
+	content: '\nCSS by rei#0001';
 }
 
 .timestamp {
