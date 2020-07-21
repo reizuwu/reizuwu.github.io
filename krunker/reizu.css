@@ -1,7 +1,9 @@
-/* Updated 16 July 2020 */
+/* Updated 20 July 2020 */
 
 :root {
 	--accent-color: #dfafff;
+	--verified-color: #40c4ff;
+	--verified-clan-color: #fbc02d;
 	--ingame-bg-color: rgba(15, 15, 15, .2);
 }
 
@@ -37,6 +39,14 @@
 
 [style*="margin-top:10px;font-size:20px;color:rgba(255,255,255,0.4)"] {
 	display: none !important;
+}
+
+[style*="color:#40C4FF;margin-top:5px;font-size:23px"] {
+	color: var(--verified-color) !important;
+}
+
+[style*="color:#FBC02D"] {
+	color: var(--verified-clan-color) !important;
 }
 
 #uiBase {
@@ -1719,6 +1729,10 @@ span.gray {
 	font-size: 24px;
 	font-style: normal !important;
 	font-weight: 400 !important;
+}
+
+.material-icons.menuClassPlayerVerified {
+	color: var(--verified-color);
 }
 
 .menuLink {
