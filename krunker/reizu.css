@@ -1,4 +1,4 @@
-/* Updated 20 July 2020 */
+/* Updated 21 July 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -895,8 +895,8 @@ tr td:nth-child(2) {
 
 .standout::before {
 	content: 'CSS by rei#0001';
-	font-size: 16px;
-	margin-right: 20px;
+	font-size: 18px;
+	margin-right: 22px;
 	color: rgba(255, 255, 255, .5);
 	visibility: visible;
 }
@@ -1513,10 +1513,6 @@ span.gray {
 	font-size: 24px;
 	animation: none;
 	-webkit-animation: none;
-}
-
-#instructions::after {
-	content: '\nCSS by rei#0001';
 }
 
 .timestamp {
