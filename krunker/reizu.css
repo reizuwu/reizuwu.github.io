@@ -10,6 +10,7 @@
 	--menu-bg-color: rgba(255, 255, 255, .3);
 	--menu-bg-color-secondary: rgba(0, 0, 0, .3);
 	--ingame-bg-color: rgba(15, 15, 15, .2);
+	--text-transform: none;
 }
 
 @font-face {
@@ -99,12 +100,14 @@ a:hover {
 }
 
 #uiBase.onMenu #spectButton {
+	top: 70px;
 	left: 20px;
 	transform: none;
-	text-transform: lowercase;
+	text-transform: var(--text-transform);
 }
 
 #uiBase.onMenu #claimHolder {
+	top: 100px;
 	left: 20px;
 	transform: none;
 }
@@ -114,7 +117,7 @@ a:hover {
 }
 
 #claimTimer {
-	text-transform: lowercase;
+	text-transform: var(--text-transform);
 }
 
 #braveWarning {
@@ -126,7 +129,7 @@ a:hover {
 	color: var(--accent-color) !important;
 	text-shadow: none !important;
 	box-shadow: none !important;
-	text-transform: lowercase;
+	text-transform: var(--text-transform);
 }
 
 .button:hover {
@@ -171,7 +174,8 @@ a:hover {
 #menuBtnHost:after {
 	visibility: visible;
 	font-size: 18px !important;
-	content: 'host';
+	content: 'Host';
+	text-transform: var(--text-transform);
 }
 
 #teamSelector {
@@ -241,7 +245,7 @@ a:hover {
 
 .terms {
 	color: var(--accent-color);
-	text-transform: lowercase;
+	text-transform: var(--text-transform);
 }
 
 .terms:hover {
@@ -307,7 +311,7 @@ a:hover {
 
 #menuLevelText {
 	font-size: 16px;
-	text-transform: lowercase;
+	text-transform: var(--text-transform);
 }
 
 #mailIcon:hover {
@@ -329,12 +333,12 @@ a:hover {
 
 #menuClassSubtext {
 	text-shadow: none;
-	text-transform: lowercase;
+	text-transform: var(--text-transform);
 }
 
 #menuClassName {
 	text-shadow: none;
-	text-transform: lowercase;
+	text-transform: var(--text-transform);
 }
 
 .progressBarInner {
@@ -350,11 +354,11 @@ a:hover {
 }
 
 #menuRegionLabel {
-	text-transform: lowercase;
+	text-transform: var(--text-transform);
 }
 
 #menuFPSDisplay {
-	text-transform: lowercase;
+	text-transform: var(--text-transform);
 }
 
 #menuFPS {
@@ -377,7 +381,7 @@ a:hover {
 #menuItemContainer {
 	width: fit-content;
 	height: min-content;
-	top: 220px;
+	top: 200px;
 }
 
 .menuItem {
@@ -403,7 +407,7 @@ a:hover {
 .menuItemTitle {
 	color: var(--accent-color) !important;
 	font-size: 18px !important;
-	text-transform: lowercase;
+	text-transform: var(--text-transform);
 	pointer-events: all;
 }
 
@@ -805,7 +809,7 @@ input:checked+.optCheck {
 	z-index: 9;
 	color: var(--accent-color);
 	font-size: 24px;
-	text-transform: lowercase;
+	text-transform: var(--text-transform);
 	animation: none;
 	-webkit-animation: none;
 }
