@@ -233,6 +233,10 @@ a:hover {
 	margin-top: 0 !important;
 }
 
+.settLabel {
+	font-size: 18px;
+}
+
 .b {
 	color: #fff !important;
 }
