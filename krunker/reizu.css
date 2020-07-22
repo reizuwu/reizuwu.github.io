@@ -10,7 +10,7 @@
 	--menu-bg-color: rgba(255, 255, 255, .3);
 	--menu-bg-color-secondary: rgba(0, 0, 0, .3);
 	--ingame-bg-color: rgba(15, 15, 15, .2);
-	--text-transform: none;
+	--text-transform: lowercase;
 }
 
 @font-face {
@@ -33,6 +33,10 @@
 
 [style*="color:#2196F3"] {
 	color: var(--accent-color) !important;
+}
+
+[style*="color:rgba(0,0,0,0.3)"] {
+	color: #fff !important;
 }
 
 [style*="color:#9eeb56"] {
@@ -222,7 +226,11 @@ a:hover {
 .settNameSmall {
 	color: var(--accent-color);
 	font-size: 18px;
-	margin-top: 20px;
+	margin-top: 20px !important;
+}
+
+.settNameSmall {
+	margin-top: 0 !important;
 }
 
 .b {
@@ -624,6 +632,7 @@ input:focus+.slider2 {
 
 input {
 	background: var(--menu-bg-color-secondary) !important;
+	color: var(--accent-color) !important;
 	border-radius: 0 !important;
 }
 
@@ -1006,7 +1015,7 @@ input:checked+.optCheck {
 
 .endCard {
 	left: 50% !important;
-	background-color: var(--menu-bg-color);
+	background-color: transparent;
 }
 
 #tabHolder {
@@ -1195,6 +1204,7 @@ input:checked+.optCheck {
 }
 
 #reloadMsg {
+	bottom: 100px;
 	background: transparent !important;
 }
 
