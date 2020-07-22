@@ -2,7 +2,22 @@
 
 :root {
 	--accent-color: #dfafff;
+	--health-color: var(--accent-color);
+	--ammo-color: #fff;
+	--premium-color: #fbc02d;
 	--verified-color: #40c4ff;
 	--verified-clan-color: #fbc02d;
+	--menu-bg-color: rgba(255, 255, 255, .3);
+	--menu-bg-color-secondary: rgba(0, 0, 0, .3);
 	--ingame-bg-color: rgba(15, 15, 15, .2);
+}
+
+@font-face {
+	font-family: gamefont;
+	src: url(https://fonts.gstatic.com/s/inter/v2/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2);
+}
+
+@font-face {
+	font-family: hpammo;
+	src: url(https://reizu.moe/fonts/Renogare.ttf);
 }
