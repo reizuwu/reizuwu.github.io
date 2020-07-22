@@ -811,6 +811,7 @@ input:checked+.optCheck {
 
 #mapInfo {
 	font-size: 18px;
+	text-transform: var(--text-transform);
 }
 
 #instructions {
@@ -1001,7 +1002,7 @@ input:checked+.optCheck {
 }
 
 #endTable {
-	background-color: transparent;
+	background-color: var(--menu-bg-color);
 	border-radius: 0;
 }
 
