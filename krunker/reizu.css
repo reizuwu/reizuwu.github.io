@@ -987,7 +987,7 @@ input:checked+.optCheck {
 }
 
 .teamTotals {
-	background-color: var(--menu-bg-color);
+	background-color: var(--menu-bg-color-secondary);
 	border-radius: 0;
 }
 
