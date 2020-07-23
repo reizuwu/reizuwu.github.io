@@ -1006,7 +1006,7 @@ input:checked+.optCheck {
 }
 
 #endTable {
-	background-color: var(--menu-bg-color);
+	background-color: transparent;
 	border-radius: 0;
 }
 
@@ -1020,7 +1020,7 @@ input:checked+.optCheck {
 
 .endCard {
 	left: 50% !important;
-	background-color: transparent;
+	background-color: var(--menu-bg-color-secondary);
 }
 
 #tabHolder {
