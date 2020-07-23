@@ -996,6 +996,7 @@ input:checked+.optCheck {
 .newLeaderName span[style*='color:#FBC02D'],
 .leaderNameM span[style*='color:#FBC02D'],
 .newLeaderNameM span[style*='color:#FBC02D'],
+.LeaderNameF span[style*='color:#FBC02D'],
 .newLeaderNameF span[style*='color:#FBC02D'] {
 	color: var(--verified-clan-color) !important;
 }
