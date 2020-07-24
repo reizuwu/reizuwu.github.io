@@ -4,9 +4,9 @@
 	--accent-color: #dfafff;
 	--health-color: var(--accent-color);
 	--ammo-color: #fff;
-	--premium-color: #fbc02d;
-	--verified-color: #40c4ff;
-	--verified-clan-color: #fbc02d;
+	--premium-color: #afefff;
+	--verified-color: #afefff;
+	--verified-clan-color: #afefff;
 	--menu-bg-color: rgba(255, 255, 255, .3);
 	--menu-bg-color-secondary: rgba(0, 0, 0, .3);
 	--ingame-bg-color: rgba(15, 15, 15, .2);
@@ -104,14 +104,12 @@ a:hover {
 }
 
 #uiBase.onMenu #spectButton {
-	top: 70px;
 	left: 20px;
 	transform: none;
 	text-transform: var(--text-transform);
 }
 
 #uiBase.onMenu #claimHolder {
-	top: 100px;
 	left: 20px;
 	transform: none;
 }
@@ -167,7 +165,8 @@ a:hover {
 }
 
 #subLogoButtons {
-	bottom: 20px;
+	bottom: 60px;
+	transform: translate(-50%, 0);
 }
 
 #menuBtnHost {
@@ -183,7 +182,7 @@ a:hover {
 }
 
 #teamSelector {
-	bottom: 100px;
+	bottom: 150px;
 }
 
 .centSwitch {
@@ -393,16 +392,19 @@ a:hover {
 #menuItemContainer {
 	width: fit-content;
 	height: min-content;
-	top: 200px;
+	top: unset;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	flex-direction: row;
 }
 
 .menuItem {
-	align-items: flex-start;
+	align-items: center;
 	background: transparent;
-	padding: 22px;
-	padding-bottom: 18px;
-	margin-left: 8px;
-	margin-right: 8px;
+	padding-bottom: 5px;
+	padding-left: 22px;
+	padding-right: 22px;
 	pointer-events: none;
 }
 
@@ -416,11 +418,13 @@ a:hover {
 	color: #fff;
 }
 
-.menuItemTitle {
+.menuItem .menuItemTitle {
+	margin-top: 0;
 	color: var(--accent-color) !important;
 	font-size: 18px !important;
 	text-transform: var(--text-transform);
 	pointer-events: all;
+	transition: all .2s;
 }
 
 .menuItemTitle:hover {
@@ -1234,20 +1238,24 @@ input:checked+.optCheck {
 }
 
 #chatInput {
-	background-color: transparent !important;
+	background-color: var(--ingame-bg-color) !important;
+	font-size: 16px;
 }
 
 #chatInput::placeholder {
-	visibility: hidden;
+	color: #fff !important;
+	text-transform: var(--text-transform);
 }
 
 #chatHolder {
 	bottom: 20px !important;
 	left: 20px !important;
+	background-color: var(--ingame-bg-color);
 }
 
 .chatItem {
 	border-radius: 0;
+	background-color: transparent !important;
 }
 
 #weapDisplay {
