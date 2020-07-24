@@ -928,26 +928,31 @@ input:checked+.optCheck {
 	background-color: transparent;
 }
 
+.tScore {
+	display: inline-block;
+}
+
 #tScoreV1 {
 	position: fixed;
-	left: calc(50% - 55px);
+	left: -25%;
 	top: 4px;
 }
 
 #tScoreV2 {
 	position: fixed;
-	left: calc(50% + 20px);
+	left: 25%;
 	top: 4px;
 }
 
 .tScoreT {
+	width: 100%;
+	text-align: center;
 	font-size: 15px;
 	color: #fff;
 	z-index: 2;
 }
 
 .tScoreC {
-	position: fixed;
 	left: 50%;
 	width: 75px;
 	height: 25px;
@@ -958,7 +963,6 @@ input:checked+.optCheck {
 }
 
 .tScoreC.you {
-	transform: translateX(-75px);
 	background-color: #fff;
 	opacity: 50%;
 	z-index: 1;
