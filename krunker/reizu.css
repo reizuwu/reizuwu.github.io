@@ -1,4 +1,4 @@
-/* Updated 23 July 2020 */
+/* Updated 24 July 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -880,11 +880,13 @@ input:checked+.optCheck {
 	margin-bottom: 0;
 	border-radius: 0;
 	background-color: var(--ingame-bg-color);
+	will-change: unset;
 }
 
 #timerVal {
 	font-size: 28px;
 	padding-left: 0;
+	will-change: unset;
 }
 
 #timerIcon {
@@ -1186,6 +1188,7 @@ input:checked+.optCheck {
 	text-align: center;
 	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 	margin-top: 0;
+	will-change: unset;
 }
 
 #maxHP {
