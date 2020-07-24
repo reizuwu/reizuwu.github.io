@@ -958,6 +958,30 @@ input:checked+.optCheck {
 	z-index: 2;
 }
 
+.tScoreM {
+	display: none;
+}
+
+.tScoreF {
+	left: 50%;
+	width: 75px;
+	height: 25px;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #eb5656;
+	color: transparent;
+	opacity: 50%;
+	z-index: 1;
+}
+
+.tScoreF.you {
+	background-color: #5699eb;
+	color: transparent;
+	opacity: 50%;
+	z-index: 1;
+}
+
 .tScoreC {
 	left: 50%;
 	width: 75px;
