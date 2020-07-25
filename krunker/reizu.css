@@ -1,4 +1,4 @@
-/* Updated 24 July 2020 */
+/* Updated 25 July 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -36,7 +36,7 @@
 }
 
 [style*="color:rgba(0,0,0,0.3)"] {
-	color: #fff !important;
+	color: var(--accent-color) !important;
 }
 
 [style*="color:#9eeb56"] {
