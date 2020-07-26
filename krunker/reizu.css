@@ -1,4 +1,4 @@
-/* Updated 25 July 2020 */
+/* Updated 26 July 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -7,8 +7,8 @@
 	--premium-color: #afefff;
 	--verified-color: #afefff;
 	--verified-clan-color: #afefff;
-	--menu-bg-color: rgba(255, 255, 255, .3);
-	--menu-bg-color-secondary: rgba(0, 0, 0, .3);
+	--menu-bg-color: rgba(15, 15, 15, .2);
+	--menu-bg-color-secondary: rgba(0, 0, 0, .5);
 	--ingame-bg-color: rgba(15, 15, 15, .2);
 	--text-transform: lowercase;
 }
@@ -31,12 +31,8 @@
 	color: var(--accent-color) !important;
 }
 
-[style*="color:#2196F3"] {
-	color: var(--accent-color) !important;
-}
-
 [style*="color:rgba(0,0,0,0.3)"] {
-	color: var(--accent-color) !important;
+	color: rgba(255, 255, 255, .5) !important;
 }
 
 [style*="color:#9eeb56"] {
@@ -208,8 +204,12 @@ a:hover {
 	text-decoration: none;
 }
 
-.floatR {
+.settLabel {
 	font-size: 18px;
+}
+
+.settLabel[style*="color:#2196F3"] {
+	color: var(--accent-color) !important;
 }
 
 .wepLink {
@@ -221,6 +221,10 @@ a:hover {
 	text-decoration: none;
 }
 
+.floatR {
+	font-size: 18px;
+}
+
 .settName,
 .settNameSmall {
 	color: var(--accent-color);
@@ -230,10 +234,6 @@ a:hover {
 
 .settNameSmall {
 	margin-top: 0 !important;
-}
-
-.settLabel {
-	font-size: 18px;
 }
 
 .b {
@@ -342,6 +342,10 @@ a:hover {
 	color: var(--verified-clan-color) !important;
 }
 
+.menuClassPlayerVirus {
+	display: none;
+}
+
 #menuClassSubtext {
 	text-shadow: none;
 	text-transform: var(--text-transform);
@@ -447,7 +451,7 @@ a:hover {
 
 #menuWindow {
 	max-height: calc(100% - 360px) !important;
-	background-color: rgba(255, 255, 255, .2);
+	background-color: var(--menu-bg-color);
 	box-shadow: none;
 	border-radius: 0;
 }
@@ -553,7 +557,7 @@ a:hover {
 
 #serverSearch::placeholder,
 #settSearch::placeholder {
-	color: var(--menu-bg-color-secondary);
+	color: rgba(255, 255, 255, .5);
 	font-size: 18px;
 }
 
@@ -659,7 +663,7 @@ input {
 }
 
 input::placeholder {
-	color: var(--menu-bg-color-secondary) !important;
+	color: rgba(255, 255, 255, .5) !important;
 }
 
 input[type=color] {
@@ -702,7 +706,7 @@ input:focus+.sliderSml {
 }
 
 .smlInput::placeholder {
-	color: var(--menu-bg-color-secondary);
+	color: rgba(255, 255, 255, .5);
 }
 
 .accountInput {
@@ -712,7 +716,7 @@ input:focus+.sliderSml {
 }
 
 .accountInput::placeholder {
-	color: var(--menu-bg-color-secondary);
+	color: rgba(255, 255, 255, .5);
 	font-size: 18px;
 }
 
@@ -810,6 +814,11 @@ input:checked+.optCheck {
 #presetSelect {
 	background-color: var(--menu-bg-color-secondary) !important;
 	border-radius: 0 !important;
+}
+
+.shopCard {
+	border-radius: 0;
+	text-shadow: none;
 }
 
 .loadMoreD {
@@ -1270,7 +1279,7 @@ input:checked+.optCheck {
 }
 
 #chatInput::placeholder {
-	color: #fff !important;
+	color: rgba(255, 255, 255, .5) !important;
 	text-transform: var(--text-transform);
 }
 
