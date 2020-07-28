@@ -1,4 +1,4 @@
-/* Updated 26 July 2020 */
+/* Updated 28 July 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -161,8 +161,8 @@ a:hover {
 }
 
 #subLogoButtons {
-	bottom: 60px;
-	transform: translate(-50%, 0);
+	bottom: 50px;
+	transform: translateX(-50%);
 }
 
 #menuBtnHost {
@@ -178,7 +178,7 @@ a:hover {
 }
 
 #teamSelector {
-	bottom: 150px;
+	bottom: 120px;
 }
 
 .centSwitch {
@@ -1260,7 +1260,7 @@ input:checked+.optCheck {
 	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
-#ammoMax {
+#ammoMax {	
 	display: none;
 }
 
