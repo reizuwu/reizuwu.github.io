@@ -527,10 +527,6 @@ a:hover {
 	position: relative;
 }
 
-.settingPreset {
-	display: none;
-}
-
 #requiresRestart {
 	display: none;
 }
