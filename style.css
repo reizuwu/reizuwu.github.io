@@ -9,16 +9,11 @@
 
 body {
 	font-family: 'Regular', sans-serif;
-	background: linear-gradient(
-          rgba(0, 0, 0, 0), 
-          rgba(0, 0, 0, 0)
-        ),
-		url('img/erio.jpg');
 	background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
     background-attachment: fixed;
-	background-color: #7fbfdf;
+	background-color: #cfbfff;
 	color: #fff;
 	font-size: 18px;
 }
@@ -34,6 +29,7 @@ a, a:hover, a:focus, a:active, a:visited {
 }
 
 .image {
+	visibility: hidden;
 	margin-top: 50px;
 	border-radius: 50%;
 }
