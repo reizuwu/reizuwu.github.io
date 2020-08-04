@@ -1,12 +1,12 @@
-/* Updated 28 July 2020 */
+/* Updated 4 August 2020 */
 
 :root {
 	--accent-color: #dfafff;
 	--health-color: var(--accent-color);
 	--ammo-color: #fff;
-	--premium-color: #afefff;
-	--verified-color: #afefff;
-	--verified-clan-color: #afefff;
+	--premium-color: #fbc02d;
+	--verified-color: #40c4ff;
+	--verified-clan-color: #fbc02d;
 	--menu-bg-color: rgba(15, 15, 15, .2);
 	--menu-bg-color-secondary: rgba(0, 0, 0, .5);
 	--ingame-bg-color: rgba(15, 15, 15, .2);
@@ -161,7 +161,7 @@ a:hover {
 }
 
 #subLogoButtons {
-	bottom: 50px;
+	bottom: 80px;
 	transform: translateX(-50%);
 }
 
@@ -178,7 +178,7 @@ a:hover {
 }
 
 #teamSelector {
-	bottom: 120px;
+	bottom: 150px;
 }
 
 .centSwitch {
@@ -397,7 +397,7 @@ a:hover {
 	width: fit-content;
 	height: min-content;
 	top: unset;
-	bottom: 20px;
+	bottom: 50px;
 	left: 50%;
 	transform: translateX(-50%);
 	flex-direction: row;
@@ -836,6 +836,26 @@ input:checked+.optCheck {
 	border-radius: 0;
 }
 
+#modVote{
+	font-size: 18px;
+}
+
+.voteHint {
+	background-color: transparent !important;
+	color: var(--accent-color);
+	text-shadow: none;
+}
+
+.voteHint:hover {
+	color: #fff;
+    filter: none;
+    -webkit-filter: none;
+}
+
+.material-icons.vote {
+	font-size: 32px;
+}
+
 #mapInfo {
 	font-size: 18px;
 	text-transform: var(--text-transform);
@@ -1166,6 +1186,12 @@ input:checked+.optCheck {
 	border-radius: 0;
 }
 
+.countIcon {
+	background-color: var(--ingame-bg-color);
+	border-radius: 0;
+	padding: 7px;
+}
+
 #deathsVal,
 #killsVal,
 #livesDisp,
@@ -1173,16 +1199,6 @@ input:checked+.optCheck {
 #myScoreVal {
 	bottom: 7px;
 	position: relative;
-}
-
-#deathCount,
-#killCount,
-#livesCount,
-#streakCount,
-#scoreCount {
-	background-color: var(--ingame-bg-color);
-	border-radius: 0;
-	padding: 7px;
 }
 
 .kfItem {
