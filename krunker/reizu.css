@@ -1,4 +1,4 @@
-/* Updated 4 August 2020 */
+/* Updated 5 August 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -562,6 +562,47 @@ a:hover {
 	border-radius: 0;
 }
 
+.partyAvatar {
+	border-radius: 0;
+}
+
+.jQR {
+	background-color: transparent !important;
+	color: var(--accent-color) !important;
+	box-shadow: none !important;
+}
+
+.jQR:hover {
+	color: #fff !important;
+	box-shadow: none !important;
+}
+
+.jQR:active {
+	color: #fff !important;
+	box-shadow: none !important;
+}
+
+.joinQueue {
+	background-color: transparent;
+	color: var(--accent-color);
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.joinQueue:hover {
+	height: 60px;
+	margin-top: 10px;
+	color: #fff;
+	box-shadow: none;
+}
+
+.joinQueue:active {
+	height: 60px;
+	margin-top: 10px;
+	color: #fff;
+	box-shadow: none;
+}
+
 #modDropper {
 	background-color: var(--menu-bg-color-secondary);
 	border: 4px solid transparent;
@@ -570,6 +611,10 @@ a:hover {
 .classCard {
 	background-color: transparent;
 	text-shadow: none;
+}
+
+.classImgC {
+	border-radius: 0;
 }
 
 .classXPBar {
@@ -836,7 +881,7 @@ input:checked+.optCheck {
 	border-radius: 0;
 }
 
-#modVote{
+#modVote {
 	font-size: 18px;
 }
 
@@ -848,8 +893,8 @@ input:checked+.optCheck {
 
 .voteHint:hover {
 	color: #fff;
-    filter: none;
-    -webkit-filter: none;
+	filter: none;
+	-webkit-filter: none;
 }
 
 .material-icons.vote {
@@ -1272,7 +1317,7 @@ input:checked+.optCheck {
 	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
-#ammoMax {	
+#ammoMax {
 	display: none;
 }
 
