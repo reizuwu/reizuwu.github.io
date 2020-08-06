@@ -1,4 +1,4 @@
-/* Updated 5 August 2020 */
+/* Updated 6 August 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -1274,7 +1274,6 @@ input:checked+.optCheck {
 	color: var(--health-color);
 	font-family: hpammo;
 	font-size: 48px;
-	font-weight: 500;
 	text-align: center;
 	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 	margin-top: 0;
@@ -1312,7 +1311,6 @@ input:checked+.optCheck {
 	color: var(--ammo-color);
 	font-family: hpammo;
 	font-size: 48px;
-	font-weight: 500;
 	margin-left: 12px;
 	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
@@ -1383,4 +1381,14 @@ input:checked+.optCheck {
 
 #curGameInfo {
 	display: none;
+}
+
+.readAll {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.readAll:hover {
+    background-color: transparent;
+    color: #fff;
 }
