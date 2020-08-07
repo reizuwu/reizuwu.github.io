@@ -931,6 +931,10 @@ input:checked+.optCheck {
 	background-color: var(--accent-color);
 }
 
+#killCardHolder {
+    bottom: 100px;
+}
+
 #timerDisplay {
 	text-align: center;
 	position: fixed;
