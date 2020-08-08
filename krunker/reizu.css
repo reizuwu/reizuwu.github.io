@@ -616,6 +616,7 @@ a:hover {
 .loadoutBtn {
 	background-color: transparent;
 	color: var(--accent-color);
+	font-size: 18px;
 }
 
 .classCard {
