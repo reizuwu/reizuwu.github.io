@@ -1228,6 +1228,11 @@ input:checked+.optCheck {
 	background-color: var(--accent-color);
 }
 
+.xpEndBarV {
+	text-shadow: none;
+	top: 10px;
+}
+
 #medalTable {
 	background-color: transparent;
 }
