@@ -1,4 +1,4 @@
-/* Updated 8 August 2020 */
+/* Updated 10 August 2020 */
 
 :root {
     --accent-color: #0670c2;
@@ -9,7 +9,7 @@
     --verified-clan-color: #fbc02d;
     --menu-bg-color: rgba(15, 15, 15, .2);
     --menu-bg-color-secondary: rgba(0, 0, 0, .5);
-    --ingame-bg-color: rgba(15, 15, 15,.2);
+    --ingame-bg-color: rgba(15, 15, 15, .2);
     --text-transform: none;
 }
 
@@ -111,7 +111,7 @@ a:hover {
 }
 
 .button:hover {
-    background-color: transparent;
+    background-color: transparent !important;
     color: #fff !important;
     -webkit-transform: none;
     transform: none;
@@ -127,17 +127,49 @@ a:hover {
     background-color: transparent !important;
 }
 
+.buttonPI {
+    box-shadow: none !important;
+}
+
+.buttonPI:hover {
+    box-shadow: none !important;
+}
+
+.buttonR {
+    box-shadow: none !important;
+}
+
+.buttonR:hover {
+    box-shadow: none !important;
+}
+
+.buttonP {
+    box-shadow: none !important;
+}
+
+.buttonP:hover {
+    box-shadow: none !important;
+}
+
+.buttonG {
+    box-shadow: none !important;
+}
+
+.buttonG:hover {
+    box-shadow: none !important;
+}
+
 .button.lgn {
     position: absolute;
     left: 0;
-    width: fit-content !important;
+    width: max-content !important;
     padding-left: 22px !important;
     margin-left: 8px !important;
     font-size: 18px !important;
 }
 
-.button.lgn[style*="width:180px;padding-top:3px;padding-bottom:15px;"] {
-    display: none;
+.button.lgn .material-icons {
+	display: none;
 }
 
 #subLogoButtons {
@@ -305,9 +337,25 @@ a:hover {
     text-transform: var(--text-transform);
 }
 
+.progressBar {
+	background: var(--menu-bg-color-secondary);
+	border-radius: 0;
+}
+
+.progressBarInner {
+	background: var(--accent-color);
+	border-radius: 0;
+}
+
 #mailIcon:hover {
     opacity: 1;
     transform: none
+}
+
+#mLevelCont {
+	background-color: transparent;
+	text-shadow: none;
+	border-bottom-right-radius: 0;
 }
 
 .menuClassPlayerPremium {
@@ -336,8 +384,8 @@ a:hover {
     text-transform: var(--text-transform);
 }
 
-.progressBarInner {
-    background: var(--accent-color);
+#customizeButton .material-icons {
+	display: none;
 }
 
 .krSocial {
@@ -568,11 +616,6 @@ a:hover {
 #modDropper {
     background-color: var(--menu-bg-color-secondary);
     border: 4px solid transparent;
-}
-
-#modDropper {
-	background-color: var(--menu-bg-color-secondary);
-	border: 4px solid transparent;
 }
 
 #loadoutSelect {
