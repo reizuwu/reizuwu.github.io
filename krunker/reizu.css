@@ -1,4 +1,4 @@
-/* Updated 8 August 2020 */
+/* Updated 10 August 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -131,7 +131,7 @@ a:hover {
 }
 
 .button:hover {
-	background-color: transparent;
+	background-color: transparent !important;
 	color: #fff !important;
 	-webkit-transform: none;
 	transform: none;
@@ -147,16 +147,48 @@ a:hover {
 	background-color: transparent !important;
 }
 
+.buttonPI {
+	box-shadow: none !important;
+}
+
+.buttonPI:hover {
+	box-shadow: none !important;
+}
+
+.buttonR {
+	box-shadow: none !important;
+}
+
+.buttonR:hover {
+	box-shadow: none !important;
+}
+
+.buttonP {
+	box-shadow: none !important;
+}
+
+.buttonP:hover {
+	box-shadow: none !important;
+}
+
+.buttonG {
+	box-shadow: none !important;
+}
+
+.buttonG:hover {
+	box-shadow: none !important;
+}
+
 .button.lgn {
 	position: absolute;
 	left: 0;
-	width: fit-content !important;
+	width: max-content !important;
 	padding-left: 22px !important;
 	margin-left: 8px !important;
 	font-size: 18px !important;
 }
 
-.button.lgn[style*="width:180px;padding-top:3px;padding-bottom:15px;"] {
+.button.lgn .material-icons {
 	display: none;
 }
 
@@ -325,9 +357,25 @@ a:hover {
 	text-transform: var(--text-transform);
 }
 
+.progressBar {
+	background: var(--menu-bg-color-secondary);
+	border-radius: 0;
+}
+
+.progressBarInner {
+	background: var(--accent-color);
+	border-radius: 0;
+}
+
 #mailIcon:hover {
 	opacity: 1;
 	transform: none
+}
+
+#mLevelCont {
+	background-color: transparent;
+	text-shadow: none;
+	border-bottom-right-radius: 0;
 }
 
 .menuClassPlayerPremium {
@@ -356,8 +404,8 @@ a:hover {
 	text-transform: var(--text-transform);
 }
 
-.progressBarInner {
-	background: var(--accent-color);
+#customizeButton .material-icons {
+	display: none;
 }
 
 .krSocial {
@@ -943,7 +991,7 @@ input:checked+.optCheck {
 }
 
 #killCardHolder {
-    bottom: 100px;
+	bottom: 100px;
 }
 
 #timerDisplay {
@@ -1404,11 +1452,11 @@ input:checked+.optCheck {
 }
 
 .readAll {
-    background-color: transparent;
-    color: var(--accent-color);
+	background-color: transparent;
+	color: var(--accent-color);
 }
 
 .readAll:hover {
-    background-color: transparent;
-    color: #fff;
+	background-color: transparent;
+	color: #fff;
 }
