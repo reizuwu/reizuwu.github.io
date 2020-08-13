@@ -6,7 +6,6 @@
     --ammo-color: #fff;
     --premium-color: #fbc02d;
     --verified-color: #40c4ff;
-    --verified-clan-color: #fbc02d;
     --menu-bg-color: rgba(15, 15, 15, .2);
     --menu-bg-color-secondary: rgba(0, 0, 0, .5);
     --ingame-bg-color: rgba(15, 15, 15, .2);
@@ -364,10 +363,6 @@ a:hover {
 
 .menuClassPlayerVerified {
     color: var(--verified-color) !important;
-}
-
-.menuClassPlayerClan[style*='color:#FBC02D'] {
-    color: var(--verified-clan-color) !important;
 }
 
 .menuClassPlayerVirus {
@@ -1040,15 +1035,6 @@ input:checked+.optCheck {
     color: var(--verified-color) !important;
 }
 
-.leaderName span[style*='color:#FBC02D'],
-.newLeaderName span[style*='color:#FBC02D'],
-.leaderNameM span[style*='color:#FBC02D'],
-.newLeaderNameM span[style*='color:#FBC02D'],
-.leaderNameF span[style*='color:#FBC02D'],
-.newLeaderNameF span[style*='color:#FBC02D'] {
-    color: var(--verified-clan-color) !important;
-}
-
 .teamTotals {
     background-color: var(--menu-bg-color-secondary);
     border-radius: 0;
@@ -1075,10 +1061,6 @@ input:checked+.optCheck {
 
 .endTableN[style*='color:rgba(255,255,255,0.6)'] {
     color: var(--accent-color) !important;
-}
-
-.endTableN span[style*="color:#FBC02D"] {
-    color: var(--verified-clan-color) !important;
 }
 
 .endCard {
