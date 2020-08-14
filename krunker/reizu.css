@@ -1,4 +1,4 @@
-/* Updated 10 August 2020 */
+/* Updated 14 August 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -458,6 +458,7 @@ a:hover {
 .menuItem:hover {
 	background: transparent;
 	color: #fff;
+	border-left: none;
 }
 
 .menuItem:active {
