@@ -1,4 +1,4 @@
-/* Updated 14 August 2020 */
+/* Updated 18 August 2020 */
 
 :root {
     --accent-color: #0670c2;
@@ -168,12 +168,12 @@ a:hover {
 }
 
 .button.lgn .material-icons {
-	display: none;
+    display: none;
 }
 
 #subLogoButtons {
     bottom: 50px;
-	transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 #menuBtnHost {
@@ -337,13 +337,13 @@ a:hover {
 }
 
 .progressBar {
-	background: var(--menu-bg-color-secondary);
-	border-radius: 0;
+    background: var(--menu-bg-color-secondary);
+    border-radius: 0;
 }
 
 .progressBarInner {
-	background: var(--accent-color);
-	border-radius: 0;
+    background: var(--accent-color);
+    border-radius: 0;
 }
 
 #mailIcon:hover {
@@ -352,9 +352,9 @@ a:hover {
 }
 
 #mLevelCont {
-	background-color: transparent;
-	text-shadow: none;
-	border-bottom-right-radius: 0;
+    background-color: transparent;
+    text-shadow: none;
+    border-bottom-right-radius: 0;
 }
 
 .menuClassPlayerPremium {
@@ -380,7 +380,7 @@ a:hover {
 }
 
 #customizeButton .material-icons {
-	display: none;
+    display: none;
 }
 
 .krSocial {
@@ -431,7 +431,7 @@ a:hover {
 .menuItem:hover {
     background: transparent;
     color: #fff;
-	border-left: none;
+    border-left: none;
 }
 
 .menuItem:active {
@@ -615,14 +615,14 @@ a:hover {
 }
 
 #loadoutSelect {
-	background-color: var(--menu-bg-color-secondary) !important;
-	border-radius: 0 !important;
+    background-color: var(--menu-bg-color-secondary) !important;
+    border-radius: 0 !important;
 }
 
 .loadoutBtn {
-	background-color: transparent;
-	color: var(--accent-color);
-	font-size: 18px;
+    background-color: transparent;
+    color: var(--accent-color);
+    font-size: 18px;
 }
 
 .classCard {
@@ -934,7 +934,8 @@ input:checked+.optCheck {
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     border-radius: 0 !important;
     background-color: transparent !important;
 }
@@ -946,6 +947,8 @@ input:checked+.optCheck {
 ::-webkit-scrollbar-thumb {
     border-radius: 0 !important;
     background-color: var(--accent-color);
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 #timerDisplay {
@@ -1141,8 +1144,8 @@ input:checked+.optCheck {
 }
 
 .xpEndBarV {
-	text-shadow: none;
-	top: 10px;
+    text-shadow: none;
+    top: 10px;
 }
 
 #medalTable {
