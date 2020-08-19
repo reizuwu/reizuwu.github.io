@@ -1,4 +1,4 @@
-/* Updated 14 August 2020 */
+/* Updated 18 August 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -972,7 +972,8 @@ input:checked+.optCheck {
 }
 
 ::-webkit-scrollbar-track {
-	box-shadow: none !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 	border-radius: 0 !important;
 	background-color: transparent !important;
 }
@@ -984,6 +985,8 @@ input:checked+.optCheck {
 ::-webkit-scrollbar-thumb {
 	border-radius: 0 !important;
 	background-color: var(--accent-color);
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 #killCardHolder {
