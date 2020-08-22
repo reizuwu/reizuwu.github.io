@@ -1,4 +1,4 @@
-/* Updated 18 August 2020 */
+/* Updated 21 August 2020 */
 
 :root {
     --accent-color: #0670c2;
@@ -413,11 +413,16 @@ a:hover {
 
 .mailObj {
     background-color: var(--menu-bg-color-secondary);
+    color: #fff;
     border-radius: 0;
 }
 
 .mailFrom {
     color: var(--accent-color);
+}
+
+.mailText {
+    color: #fff;
 }
 
 .menuItem {
