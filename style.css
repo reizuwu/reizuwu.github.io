@@ -65,7 +65,7 @@ p {
 }
 
 .icons a:not(:last-of-type) {
-	padding-right: 20px;
+	margin-right: 20px;
 }
 
 ::placeholder {
