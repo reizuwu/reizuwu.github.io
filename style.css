@@ -38,6 +38,7 @@ a:focus,
 a:active,
 a:visited {
 	text-decoration: none;
+	outline: none;
 	color: #fff;
 }
 
