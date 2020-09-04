@@ -1,4 +1,4 @@
-/* Updated 18 August 2020 */
+/* Updated 3 September 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -285,6 +285,10 @@ a:hover {
 	color: var(--accent-color) !important;
 }
 
+#termsInfo {
+    background-color: transparent;
+}
+
 .terms {
 	color: var(--accent-color);
 	text-transform: var(--text-transform);
@@ -332,6 +336,11 @@ a:hover {
 
 .headerBarRight .verticalSeparator {
 	display: none;
+}
+
+.verticalSeparatorInline {
+	visibility: hidden;
+	height: 0;
 }
 
 #menuMiniProfilePic {
