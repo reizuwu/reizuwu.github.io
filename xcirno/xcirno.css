@@ -1,4 +1,4 @@
-/* Updated 3 September 2020 */
+/* Updated 9 September 2020 */
 
 :root {
     --accent-color: #0670c2;
@@ -389,6 +389,10 @@ a:hover {
 }
 
 #customizeButton .material-icons {
+    display: none;
+}
+
+#policeButton {
     display: none;
 }
 
