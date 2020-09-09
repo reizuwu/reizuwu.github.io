@@ -1,4 +1,4 @@
-/* Updated 3 September 2020 */
+/* Updated 9 September 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -410,6 +410,10 @@ a:hover {
 
 #customizeButton .material-icons {
 	display: none;
+}
+
+#policeButton {
+    display: none;
 }
 
 .krSocial {
