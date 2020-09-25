@@ -1,4 +1,4 @@
-/* Updated 9 September 2020 */
+/* Updated 24 September 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -44,6 +44,11 @@
 
 [style*="margin-top:10px;font-size:20px;color:rgba(255,255,255,0.4)"] {
 	display: none !important;
+}
+
+option {
+    background-color: #000;
+    color: var(--accent-color);
 }
 
 a {
