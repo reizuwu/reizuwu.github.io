@@ -1,4 +1,4 @@
-/* Updated 25 September 2020 */
+/* Updated 26 September 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -336,7 +336,7 @@ a:hover {
 }
 
 .verticalSeparator {
-	background-color: transparent;
+	visibility: hidden;
 }
 
 .headerBarRight .verticalSeparator {
