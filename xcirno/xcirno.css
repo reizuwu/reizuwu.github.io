@@ -1049,6 +1049,10 @@ input:checked+.optCheck {
     color: var(--accent-color);
 }
 
+.leaderItem .material-icons {
+	margin-top: 0 !important;
+}
+
 #leaderContainer i[style*="color:#FBC02D"] {
     color: var(--premium-color) !important;
 }
