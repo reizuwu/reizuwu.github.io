@@ -286,7 +286,7 @@ a:hover {
 }
 
 .standout::before {
-    content: 'CSS by rei#0001';
+    content: 'CSS by reizu';
     font-size: 18px;
     margin-right: 22px;
     color: rgba(255, 255, 255, .5);
