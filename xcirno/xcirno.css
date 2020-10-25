@@ -1,4 +1,4 @@
-/* Updated 23 October 2020 */
+/* Updated 25 October 2020 */
 
 :root {
     --accent-color: #0670c2;
@@ -544,6 +544,35 @@ a:hover {
 
 .xpBarV {
     top: 7px;
+}
+
+.chalCard {
+    background-color: transparent;
+    text-shadow: none;
+}
+
+.chalRight {
+    color: var(--accent-color);
+}
+
+.chalDesc {
+    color: rgba(255, 255, 255, .5);
+}
+
+.chalXPBar {
+    height: 20px;
+    background-color: var(--menu-bg-color-secondary);
+    border-radius: 0;
+}
+
+.chalXPBarC {
+    height: 20px;
+    background-color: var(--accent-color);
+    border-radius: 0;
+}
+
+.chalProg {
+	top: 2px;
 }
 
 .settingsHeader {
@@ -1220,6 +1249,18 @@ input:checked+.optCheck {
     background-color: var(--ingame-bg-color);
 }
 
+#killStreakHolder {
+    position: fixed;
+    left: 53%;
+    top: 80%;
+}
+
+.killStreakItem {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
 #hudClassIcon {
     display: none;
 }
@@ -1292,18 +1333,6 @@ input:checked+.optCheck {
 
 #ammoIcon {
     display: none;
-}
-
-#killStreakHolder {
-    position: fixed;
-    left: 53%;
-    top: 80%;
-}
-
-.killStreakItem {
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
 }
 
 #reloadMsg {
