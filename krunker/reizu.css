@@ -1,4 +1,4 @@
-/* Updated 23 October 2020 */
+/* Updated 25 October 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -588,6 +588,35 @@ a:hover {
 
 .xpBarV {
 	top: 7px;
+}
+
+.chalCard {
+    background-color: transparent;
+    text-shadow: none;
+}
+
+.chalRight {
+    color: var(--accent-color);
+}
+
+.chalDesc {
+    color: rgba(255, 255, 255, .5);
+}
+
+.chalXPBar {
+    height: 20px;
+    background-color: var(--menu-bg-color-secondary);
+    border-radius: 0;
+}
+
+.chalXPBarC {
+    height: 20px;
+    background-color: var(--accent-color);
+    border-radius: 0;
+}
+
+.chalProg {
+	top: 3px;
 }
 
 .settingsHeader {
