@@ -1,0 +1,79 @@
+@import url(https://reizu.moe/krunker/private/private.css);
+
+:root {
+    --text-color: #3f3f3f;
+    --accent-color: #cfbfff;
+    --health-color: #fff;
+    --ammo-color: #fff;
+    --premium-color: #cfbfff;
+    --verified-color: #cfbfff;
+    --menu-bg-color: rgba(255, 255, 255, 1);
+    --menu-bg-color-secondary: rgba(230, 230, 230, 1);
+    --ingame-bg-color: rgba(15, 15, 15, .2);
+    --text-transform: none;
+}
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
+}
+
+@font-face {
+	font-family: hpammo;
+	src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2);
+}
+
+#challIcon {
+	position: fixed;
+    width: 50px;
+	height: 50px;
+	left: 36%;
+	bottom: 55px;
+	filter: brightness(0) invert(1) drop-shadow(2px 2px 3px rgba(30, 30, 30, .5));
+}
+
+#ammoIcon {
+	position: fixed;
+    width: 50px;
+	height: 50px;
+	right: 36%;
+	bottom: 55px;
+    margin-right: 0;
+	margin-left: 0;
+	filter: brightness(0) invert(1) drop-shadow(2px 2px 3px rgba(30, 30, 30, .5));
+}
+
+#healthValue {
+	position: fixed;
+	left: 40%;
+	bottom: 25px;
+	font-size: 96px;
+}
+
+#ammoDisplay {
+	width: 50px;
+	height: 5px;
+	top: calc(50% + 25px);
+	left: calc(50% - 25px);
+}
+
+#ammoVal {
+	position: fixed;
+	font-size: 96px;
+	right: 40%;
+	bottom: 25px;
+	margin-left: 0;
+}
+
+#weapDisplay {
+	display: none !important;
+}
+
+#killCardHolder {
+    bottom: 20px;
+}
+
+#reloadMsg {
+	bottom: 150px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
