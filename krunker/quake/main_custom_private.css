@@ -24,6 +24,7 @@
 }
 
 #challIcon {
+    display: inline-block !important;
 	position: fixed;
     width: 50px;
 	height: 50px;
@@ -33,6 +34,7 @@
 }
 
 #ammoIcon {
+    display: inline-block !important;
 	position: fixed;
     width: 50px;
 	height: 50px;
@@ -62,15 +64,10 @@
 	font-size: 96px;
 	right: 40%;
 	bottom: 25px;
-	margin-left: 0;
 }
 
 #weapDisplay {
 	display: none !important;
-}
-
-#killCardHolder {
-    bottom: 20px;
 }
 
 #reloadMsg {
