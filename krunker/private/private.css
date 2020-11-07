@@ -107,6 +107,10 @@ a:hover {
     display: none;
 }
 
+#ot-sdk-btn-floating.ot-floating-button {
+	display: none;
+}
+
 #uiBase.onMenu #spectButton {
 	position: fixed;
 	left: 20px;
