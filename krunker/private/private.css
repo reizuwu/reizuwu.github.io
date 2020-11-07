@@ -1,4 +1,4 @@
-/* Updated 25 October 2020 */
+/* Updated 6 November 2020 */
 
 @import url(https://use.fontawesome.com/releases/v5.13.0/css/all.css);
 
@@ -109,6 +109,20 @@ a:hover {
 
 #ot-sdk-btn-floating.ot-floating-button {
 	display: none;
+}
+
+#newsHolder {
+	background-color: var(--menu-bg-color);
+    border-radius: 10px;
+}
+
+.newsItem {
+    color: var(--text-color);
+    border: none;
+}
+
+.newsItem span {
+    color: var(--text-color) !important;
 }
 
 #uiBase.onMenu #spectButton {
