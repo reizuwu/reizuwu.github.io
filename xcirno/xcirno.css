@@ -1,4 +1,4 @@
-/* Updated 25 October 2020 */
+/* Updated 6 November 2020 */
 
 :root {
     --accent-color: #0670c2;
@@ -87,6 +87,20 @@ a:hover {
 
 #ot-sdk-btn-floating.ot-floating-button {
 	display: none;
+}
+
+#newsHolder {
+	background-color: var(--menu-bg-color);
+    border-radius: 0;
+}
+
+.newsItem {
+    color: #fff;
+    border: none;
+}
+
+.newsItem span {
+    color: #fff !important;
 }
 
 #uiBase.onMenu #spectButton {
