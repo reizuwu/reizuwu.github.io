@@ -2,7 +2,7 @@
 
 :root {
 	--accent-color: #cfbfff;
-	--health-color: #cfbfff;
+	--health-color: var(--accent-color);
 	--ammo-color: #fff;
 	--premium-color: #fbc02d;
 	--verified-color: #40c4ff;
