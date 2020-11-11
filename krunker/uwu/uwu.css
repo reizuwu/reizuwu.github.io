@@ -1,0 +1,1721 @@
+/* Updated 6 November 2020 */
+
+@import url(https://use.fontawesome.com/releases/v5.13.0/css/all.css);
+
+:root {
+    --text-color: #3f3f3f;
+    --accent-color: #cfbfff;
+    --health-color: #fff;
+    --ammo-color: #fff;
+    --premium-color: #cfbfff;
+    --verified-color: #cfbfff;
+    --menu-bg-color: rgba(255, 255, 255, 1);
+    --menu-bg-color-secondary: rgba(230, 230, 230, 1);
+    --ingame-bg-color: rgba(15, 15, 15, .2);
+    --text-transform: none;
+}
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
+}
+
+@font-face {
+    font-family: hpammo;
+    src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
+}
+
+* {
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+[style*="color:#eb5656"] {
+    color: var(--accent-color) !important;
+}
+
+[style*="color:rgba(0,0,0,0.3)"] {
+    color: var(--text-color) !important;
+}
+
+[style*="color:#9eeb56"] {
+    color: rgba(255, 255, 255, .6) !important;
+}
+
+[style*="margin-top:10px;font-size:20px;color:rgba(255,255,255,0.4)"] {
+    display: none !important;
+}
+
+option {
+    background-color: #fff;
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+}
+
+a:active {
+    color: var(--text-color);
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.material-icons[style*="color:#FBC02D"] {
+    color: var(--verified-color) !important;
+}
+
+.material-icons[style*="color:#40C4FF"] {
+    color: var(--verified-color) !important;
+}
+
+.material-icons[style*="color:#2196F3;font-size:33px;vertical-align:bottom;"] {
+    color: var(--verified-color) !important;
+}
+
+#aHolder {
+    display: none !important;
+}
+
+.endAHolder {
+    display: none !important;
+}
+
+#mainLogo {
+    display: none !important;
+}
+
+#streamContainer {
+    display: none !important;
+}
+
+#merchImg {
+    display: none;
+}
+
+#ot-sdk-btn-floating.ot-floating-button {
+	display: none;
+}
+
+#newsHolder {
+	background-color: var(--menu-bg-color);
+    border-radius: 10px;
+}
+
+.newsItem {
+    color: var(--text-color);
+    border: none;
+}
+
+.newsItem span {
+    color: var(--text-color) !important;
+}
+
+#uiBase.onMenu #spectButton {
+	position: fixed;
+	left: 20px;
+	top: 85px;
+	transform: none;
+	text-transform: var(--text-transform);
+}
+
+#spectButton :not(.switchsml) {
+    color: #fff !important;
+}
+
+#uiBase.onMenu #claimHolder {
+    left: 20px;
+    transform: none;
+}
+
+#claimImg {
+    height: 70px;
+}
+
+#claimTimer {
+    text-transform: var(--text-transform);
+}
+
+#braveWarning {
+    display: none !important;
+}
+
+.button {
+    background-color: transparent !important;
+    color: #fff !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    text-transform: var(--text-transform);
+}
+
+.button:hover {
+    background-color: transparent !important;
+    color: var(--accent-color) !important;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.button.small {
+    font-size: 18px !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.button.small:hover {
+    background-color: transparent !important;
+}
+
+.buttonPI {
+    box-shadow: none !important;
+}
+
+.buttonPI:hover {
+    box-shadow: none !important;
+}
+
+.buttonR {
+    box-shadow: none !important;
+}
+
+.buttonR:hover {
+    box-shadow: none !important;
+}
+
+.buttonP {
+    box-shadow: none !important;
+}
+
+.buttonP:hover {
+    box-shadow: none !important;
+}
+
+.buttonG {
+    box-shadow: none !important;
+}
+
+.buttonG:hover {
+    box-shadow: none !important;
+}
+
+.button.lgn {
+    position: absolute;
+    left: 0;
+    width: max-content !important;
+    padding-left: 22px !important;
+    margin-left: 8px !important;
+    font-size: 18px !important;
+}
+
+.button.lgn .material-icons {
+    display: none;
+}
+
+#subLogoButtons {
+    bottom: 50px;
+    transform: translateX(-50%)
+}
+
+#menuBtnHost {
+    visibility: hidden;
+    font-size: 0 !important;
+}
+
+#menuBtnHost:after {
+    visibility: visible;
+    font-size: 18px !important;
+    content: 'Host';
+    text-transform: var(--text-transform);
+}
+
+#teamSelector {
+    bottom: 150px;
+}
+
+.centSwitch {
+    margin-top: 0;
+}
+
+.sliderCent {
+    border-radius: 6px;
+    background-color: var(--menu-bg-color-secondary);
+}
+
+.sliderCent::before {
+    height: 17px;
+    width: 15px;
+    left: 1px;
+    bottom: 0;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+}
+
+.settText {
+    color: var(--text-color);
+}
+
+.settText:hover {
+    color: var(--accent-color) !important;
+    text-decoration: none;
+}
+
+.settLabel {
+    font-size: 18px;
+}
+
+.settLabel[style*="color:#2196F3"] {
+    color: var(--text-color) !important;
+}
+
+.wepLink {
+    font-size: 18px;
+}
+
+.wepLink:hover {
+    color: var(--accent-color) !important;
+    text-decoration: none;
+}
+
+.floatR {
+    font-size: 18px;
+}
+
+.settName,
+.settNameSmall {
+    color: var(--text-color);
+    font-size: 18px;
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+.settNameSmall {
+    font-size: 16px;
+}
+
+.b {
+    color: var(--text-color) !important;
+}
+
+.setHed {
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+.plusOrMinus {
+    color: var(--accent-color);
+    font-size: 36px !important;
+    margin-right: -8px !important;
+}
+
+.floatR [style*="color:rgba(0,0,0,0.5)"] {
+    color: var(--accent-color) !important;
+}
+
+#termsInfo {
+    background-color: transparent;
+}
+
+.terms {
+    color: #fff;
+    text-transform: var(--text-transform);
+}
+
+.terms:hover {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.standout {
+    font-size: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.standout::before {
+content: 'CSS by reizu';
+    font-size: 18px;
+    margin-right: 22px;
+    color: rgba(255, 255, 255, .5);
+    visibility: visible;
+}
+
+.standout::after {
+    content: 'Advertise';
+    font-size: 18px;
+    pointer-events: all;
+    visibility: visible;
+}
+
+.headerBarLeft {
+    background-color: transparent;
+}
+
+.headerBarRight {
+    background-color: transparent;
+}
+
+.verticalSeparator {
+    background-color: transparent;
+}
+
+.headerBarRight .verticalSeparator {
+    display: none;
+}
+
+.verticalSeparatorInline {
+    visibility: hidden;
+    height: 0;
+}
+
+#menuMiniProfilePic {
+    display: none;
+}
+
+#menuAccountUsername {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#menuKRCount {
+    font-size: 16px;
+}
+
+.progressBar {
+    background: var(--menu-bg-color-secondary);
+    padding: 0;
+    border-radius: 4px;
+}
+
+.progressBarInner {
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+
+#mailIcon:hover {
+    opacity: 1;
+    transform: none
+}
+
+#mLevelCont::before {
+    content: 'LVL ';
+    text-transform: var(--text-transform);
+}
+
+#mLevelCont {
+    width: max-content;
+    background-color: transparent;
+}
+
+.menuClassPlayerPremium {
+    color: var(--premium-color) !important;
+}
+
+.menuClassPlayerVerified {
+    color: var(--verified-color) !important;
+}
+
+.menuClassPlayerVirus {
+    display: none;
+}
+
+#menuClassSubtext {
+    text-shadow: none;
+    text-transform: var(--text-transform);
+}
+
+#menuClassName {
+    text-shadow: none;
+    text-transform: var(--text-transform);
+}
+
+#customizeButton .material-icons {
+    display: none;
+}
+
+#policeButton {
+    display: none;
+}
+
+.krSocial {
+    display: none;
+}
+
+.imageButton {
+    display: none !important;
+}
+
+#menuRegionLabel {
+    text-transform: var(--text-transform);
+}
+
+#menuFPSDisplay {
+    color: #fff;
+    text-transform: var(--text-transform);
+}
+
+#menuFPS {
+    color: #fff !important;
+}
+
+#menuPingIcon {
+    color: var(--accent-color) !important;
+}
+
+#menuPingText {
+    color: #fff;
+}
+
+.mailObj {
+    background-color: var(--menu-bg-color-secondary);
+    border-radius: 10px;
+}
+
+.mailFrom {
+    color: var(--accent-color);
+}
+
+#menuItemContainer {
+    width: fit-content;
+    height: min-content;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+}
+
+.menuItem {
+    align-items: center;
+    background: transparent;
+    padding-bottom: 5px;
+    padding-left: 22px;
+    padding-right: 22px;
+    pointer-events: none;
+}
+
+.menuItem:hover {
+    background: transparent;
+    color: #fff;
+    border-left: none;
+}
+
+.menuItem:active {
+    background: transparent;
+    color: #fff;
+}
+
+.menuItem .menuItemTitle {
+    margin-top: 0;
+    color: #fff !important;
+    font-size: 18px !important;
+    text-transform: var(--text-transform);
+    pointer-events: all;
+    transition: all .2s;
+}
+
+.menuItemTitle:hover {
+    color: var(--accent-color) !important;
+}
+
+.menuItem .menuItemIcon {
+    position: relative;
+    width: 100%;
+    height: 45%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#menuWindow {
+    max-height: calc(100% - 300px) !important;
+    background-color: var(--menu-bg-color);
+    box-shadow: none;
+    border-radius: 20px;
+}
+
+.menuTabsNew {
+    background-color: transparent;
+}
+
+.menuTabNew {
+    color: var(--text-color);
+}
+
+.menuTabNew:hover {
+    color: var(--accent-color);
+    border-bottom: none !important;
+}
+
+.tabANew {
+    color: var(--accent-color) !important;
+    border-bottom: none !important;
+}
+
+.tabANew:hover {
+    border-bottom: none !important;
+}
+
+#settingsTabLayout {
+    background-color: transparent !important;
+    font-size: 18px;
+}
+
+.settingsBtn {
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.settingsBtn:hover {
+    color: var(--accent-color);
+}
+
+.settingTab:hover {
+    color: var(--accent-color);
+    border-bottom: none !important;
+}
+
+.menuLink {
+    font-size: 18px;
+}
+
+.menuLink:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#profilePicM {
+    border-radius: 10px;
+}
+
+.pfpAction {
+    border-radius: 10px;
+}
+
+.xpBar {
+    height: 20px;
+    background-color: var(--menu-bg-color-secondary);
+    padding: 0;
+    border-radius: 8px;
+}
+
+.xpBarB {
+    background-color: var(--accent-color);
+    border-radius: 8px;
+}
+
+.xpBarV {
+    top: 0;
+    color: var(--text-color);
+}
+
+.chalCard {
+    background-color: transparent;
+    text-shadow: none;
+}
+
+.chalRight {
+    color: var(--accent-color);
+}
+
+.chalDesc {
+    color: rgba(0, 0, 0, .5);
+}
+
+.chalXPBar {
+    height: 20px;
+    background-color: var(--menu-bg-color-secondary);
+    padding: 0;
+    border-radius: 8px;
+}
+
+.chalXPBarC {
+    height: 20px;
+    background-color: var(--accent-color);
+    border-radius: 8px;
+}
+
+.chalProg {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.settingsHeader {
+    background-color: transparent;
+    position: relative;
+}
+
+#requiresRestart {
+    display: none;
+}
+
+.serverHeader {
+    background-color: transparent;
+    position: relative;
+}
+
+.menuSelectorHeader {
+    font-size: 18px;
+}
+
+.menuSelector {
+    font-size: 18px;
+}
+
+#serverSearch,
+#settSearch {
+    background-color: var(--menu-bg-color-secondary);
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#serverSearch::placeholder,
+#settSearch::placeholder {
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+}
+
+.quickJoin {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: 5px;
+    text-shadow: none;
+}
+
+.quickJoin:hover {
+    -webkit-transform: none;
+    transform: none;
+}
+
+.partyAvatar {
+    border-radius: 10px;
+}
+
+.jQR {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    box-shadow: none !important;
+}
+
+.jQR:hover {
+    color: var(--accent-color) !important;
+    box-shadow: none !important;
+}
+
+.jQR:active {
+    color: var(--accent-color) !important;
+    box-shadow: none !important;
+}
+
+.joinQueue {
+    background-color: transparent;
+    color: var(--text-color);
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.joinQueue:hover {
+    height: 60px;
+    margin-top: 10px;
+    color: var(--accent-color);
+    box-shadow: none;
+}
+
+.joinQueue:active {
+    height: 60px;
+    margin-top: 10px;
+    color: var(--accent-color);
+    box-shadow: none;
+}
+
+.rankedSelection {
+    border-radius: 10px;
+}
+
+.rankedWarning {
+    border-radius: 10px;
+}
+
+#modDropper {
+    background-color: var(--menu-bg-color-secondary);
+    border: 4px solid transparent;
+    border-radius: 10px;
+}
+
+#loadoutSelect {
+    background-color: var(--menu-bg-color-secondary) !important;
+    border-radius: 10px !important;
+}
+
+.loadoutBtn {
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.loadoutBtn:hover {
+    color: var(--accent-color);
+}
+
+.classCard {
+    background-color: transparent;
+    color: var(--text-color);
+    text-shadow: none;
+}
+
+.classWeap {
+    color: var(--text-color);
+}
+
+.classLvl {
+    color: var(--text-color);
+}
+
+.classHP {
+    color: var(--text-color);
+}
+
+.classImgC {
+    border-radius: 10px;
+}
+
+.classXPBar {
+    background-color: var(--menu-bg-color-secondary);
+    border-radius: 10px;
+}
+
+.clsXPBarC {
+    margin: 0;
+    background-color: var(--accent-color);
+    height: 26px;
+    border-radius: 10px;
+}
+
+.skinColorItem {
+    border: none;
+}
+
+.switch {
+    margin-bottom: 0;
+}
+
+.slidecontainer {
+    margin-top: 3px;
+}
+
+.slider {
+    width: 28px !important;
+    height: 28px !important;
+    left: 16px;
+    border-radius: 12px;
+    background-color: var(--menu-bg-color-secondary);
+}
+
+.slider::before {
+    display: none;
+}
+
+input:checked+.slider {
+    background-color: var(--accent-color);
+}
+
+input:checked+.slider::before {
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 16px;
+    font-weight: 900;
+    content: '\f00c';
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+input:focus+.slider {
+    box-shadow: none;
+}
+
+.slider2 {
+    width: 28px;
+    border-radius: 10px;
+    background-color: var(--menu-bg-color-secondary);
+}
+
+.slider2::before {
+    display: none;
+}
+
+input:checked+.slider2 {
+    background-color: var(--accent-color);
+}
+
+input:checked+.slider2::before {
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 16px;
+    font-weight: 900;
+    content: '\f00c';
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+input:focus+.slider2 {
+    box-shadow: none;
+}
+
+.sliderM {
+    border-radius: 8px !important;
+    background-color: var(--menu-bg-color-secondary) !important;
+}
+
+.sliderM::-webkit-slider-thumb {
+    border-radius: 8px;
+    background: var(--accent-color);
+}
+
+.sliderM::-moz-range-thumb {
+    border-radius: 8px;
+    background: var(--accent-color);
+}
+
+.sliderSml {
+    background-color: var(--menu-bg-color-secondary);
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+}
+
+.sliderSml::before {
+    display: none;
+}
+
+input:checked+.sliderSml {
+    background-color: var(--accent-color);
+}
+
+input:checked+.sliderSml::before {
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 12px;
+    font-weight: 900;
+    content: '\f00c';
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+input:focus+.sliderSml {
+    box-shadow: none;
+}
+
+.switchsml {
+    margin-bottom: 0;
+}
+
+.sliderVal {
+    height: 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: var(--accent-color);
+}
+
+input {
+    background: var(--menu-bg-color-secondary) !important;
+    color: var(--text-color) !important;
+    border-radius: 10px !important;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+input[type=color] {
+    border: 4px solid var(--menu-bg-color-secondary);
+    border-radius: 10px !important;
+}
+
+.inputGrey {
+    background: var(--menu-bg-color-secondary);
+    border-radius: 10px;
+}
+
+.inputGrey2 {
+    background: var(--menu-bg-color-secondary);
+    border-radius: 10px;
+}
+
+.smlInput {
+    background-color: var(--menu-bg-color-secondary);
+    border-radius: 10px !important;
+}
+
+.smlInput::placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+.accountInput {
+    background-color: var(--menu-bg-color-secondary);
+    font-size: 18px;
+    border-radius: 10px !important;
+}
+
+.accountInput::placeholder {
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+}
+
+.searchBtn {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.searchBtn:hover {
+    color: var(--accent-color);
+    filter: none;
+    -webkit-filter: none;
+}
+
+.accountButton {
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.accountButton:hover {
+    color: var(--accent-color);
+}
+
+.subPassChg {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.subPassChg:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+    transform: none;
+}
+
+.lnkTw {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.lnkTw:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+    transform: none;
+}
+
+.mapListThumb {
+    border-radius: 10px;
+}
+
+.mapListThumb:hover {
+    opacity: 1;
+    transform: none;
+    filter: brightness(1.1);
+}
+
+.hostMap {
+    border-radius: 10px;
+    border: none;
+}
+
+.hostMapName {
+    text-shadow: none;
+}
+
+.hostMapYear {
+    text-shadow: none;
+}
+
+.hostMapVersion {
+    text-shadow: none;
+}
+
+.hostOpt {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+}
+
+.optName {
+    text-shadow: none;
+}
+
+.optCheck {
+    background-color: var(--menu-bg-color-secondary);
+    border-radius: 10px;
+}
+
+input:checked+.optCheck {
+    background-color: var(--accent-color);
+}
+
+.hostToggle {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.hostToggle:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.hostPresetBtn {
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.hostPresetBtn:hover {
+    color: var(--accent-color);
+}
+
+#presetSelect {
+    background-color: var(--menu-bg-color-secondary) !important;
+    border-radius: 10px !important;
+}
+
+.shopCard {
+    border-radius: 0;
+    text-shadow: none;
+}
+
+.loadMoreD {
+    background-color: transparent;
+    font-size: 18px;
+    color: var(--accent-color);
+    border-radius: 0;
+}
+
+.loadMoreD:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.loadMoreW {
+    background-color: transparent;
+    font-size: 18px;
+    color: var(--accent-color);
+    border-radius: 0;
+}
+
+#modVote {
+    font-size: 18px;
+}
+
+.voteHint {
+    background-color: transparent !important;
+    color: #fff;
+    text-shadow: none;
+}
+
+.voteHint:hover {
+    color: var(--accent-color);
+    filter: none;
+    -webkit-filter: none;
+}
+
+.material-icons.vote {
+    font-size: 32px;
+}
+
+#mapInfo {
+    font-size: 18px;
+    text-transform: var(--text-transform);
+}
+
+#instructions {
+    position: absolute;
+    z-index: 9;
+    color: #fff;
+    font-size: 24px;
+    text-transform: var(--text-transform);
+    animation: none;
+    -webkit-animation: none;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 10px !important;
+    background-color: transparent !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    visibility: hidden;
+    border-radius: 10px !important;
+    background: var(--accent-color);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#chatList::-webkit-scrollbar {
+    width: 5px;
+}
+
+#chatList::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+#killCard {
+    border-radius: 10px;
+}
+
+#timerDisplay {
+    text-align: center;
+    position: fixed;
+    transform: translateX(-50%);
+    top: 0;
+    left: 50%;
+    width: 150px;
+    height: 35px;
+    padding: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: var(--ingame-bg-color);
+    will-change: unset;
+}
+
+#timerVal {
+    font-size: 28px;
+    padding-left: 0;
+    will-change: unset;
+}
+
+#timerIcon {
+    display: none;
+}
+
+#fpsDisplay {
+    visibility: hidden;
+}
+
+#ingameFPS {
+    color: #fff !important;
+    visibility: visible;
+}
+
+#pingText {
+    color: #fff !important;
+}
+
+#pingIcon {
+    color: var(--accent-color) !important;
+}
+
+#pingDisplay .material-icons {
+    font-size: 22px;
+}
+
+#teamScores {
+    position: fixed;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 25px;
+    padding: 10px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.tScore {
+    display: inline-block;
+}
+
+#tScoreV1 {
+    position: fixed;
+    left: -25%;
+    top: 4px;
+}
+
+#tScoreV2 {
+    position: fixed;
+    left: 25%;
+    top: 4px;
+}
+
+.tScoreT {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    z-index: 2;
+}
+
+.tScoreM {
+    display: none;
+}
+
+.tScoreF {
+    left: 50%;
+    width: 75px;
+    height: 25px;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #eb5656;
+    color: transparent;
+    opacity: 50%;
+    z-index: 1;
+}
+
+.tScoreF.you {
+    background-color: #5699eb;
+    color: transparent;
+    opacity: 50%;
+    z-index: 1;
+}
+
+.tScoreC {
+    left: 50%;
+    width: 75px;
+    height: 25px;
+    margin-right: 0;
+    background-color: var(--accent-color);
+    opacity: 50%;
+    z-index: 1;
+}
+
+.tScoreC.you {
+    background-color: #fff;
+    opacity: 50%;
+    z-index: 1;
+}
+
+#leaderDisplay {
+    border-radius: 10px;
+    background-color: var(--ingame-bg-color);
+}
+
+.leaderName {
+    color: var(--accent-color);
+}
+
+.newLeaderContainer {
+    border-radius: 10px;
+    background-color: var(--ingame-bg-color);
+}
+
+.newLeaderName,
+.newLeaderNameM,
+.newLeaderNameF {
+    color: var(--accent-color);
+}
+
+.leaderItem .material-icons {
+	margin-top: 0 !important;
+}
+
+#leaderContainer i[style*="color:#FBC02D"] {
+    color: var(--premium-color) !important;
+}
+
+#leaderContainer i[style*="color:#40C4FF"] {
+    color: var(--verified-color) !important;
+}
+
+.teamTotals {
+    background-color: var(--ingame-bg-color);
+    border-radius: 10px;
+}
+
+.teamTotalN0 {
+    color: #fff;
+}
+
+.teamTotalN1 {
+    color: var(--accent-color);
+}
+
+#endTimer {
+    color: #fff;
+    text-shadow: none;
+    font-style: normal;
+}
+
+#endTable {
+    background-color: transparent;
+}
+
+.endTableN {
+    color: var(--accent-color);
+}
+
+.endCard {
+    left: 50% !important;
+    background-color: var(--ingame-bg-color);
+    border-radius: 10px;
+}
+
+#tabHolder {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.tabHeader {
+    color: #fff;
+}
+
+.tabHeader:hover {
+    color: var(--accent-color);
+    border-bottom: none;
+}
+
+.tabHeader.selected {
+    color: var(--accent-color);
+    border-bottom: none;
+}
+
+.endSection {
+    background-color: transparent;
+}
+
+.gfSection {
+    background-color: transparent;
+}
+
+.modeStatus {
+    color: var(--accent-color) !important;
+}
+
+.fundsVal {
+    color: #fff;
+}
+
+#kdLayout {
+    background-color: transparent;
+    border: none;
+}
+
+.crStat {
+    background-color: transparent;
+    border: none;
+}
+
+.crLabel {
+    color: #fff;
+}
+
+.crVal {
+    color: var(--accent-color);
+}
+
+.xpRnk {
+    width: 0;
+}
+
+.xpLvl {
+    color: #fff;
+}
+
+.xpEndBar {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.xpEndBarB {
+    background-color: var(--accent-color);
+}
+
+.xpEndBarV {
+    text-shadow: none;
+    top: 10px;
+}
+
+#medalTable {
+    background-color: transparent;
+}
+
+#matchVoteHolder {
+    background-color: transparent;
+}
+
+.matchVote {
+    border-radius: 10px;
+    text-shadow: none;
+}
+
+.matchVoteThumb {
+    border-radius: 10px;
+}
+
+.topRightCounters {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.countIcon {
+    background-color: transparent;
+    border-radius: 0;
+    margin-left: 20px;
+    margin-bottom: 0;
+    padding: 7px;
+}
+
+#deathsVal,
+#killsVal,
+#livesDisp,
+#streakVal,
+#myScoreVal {
+    color: #fff !important;
+    bottom: 7px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+#deathsVal::after {
+    display: block;
+    position: fixed;
+    margin-top: 45px;
+    font-size: 14px;
+    content: 'Deaths';
+}
+
+#killsVal::after {
+    display: block;
+    position: fixed;
+    margin-top: 45px;
+    font-size: 14px;
+    content: 'Kills';
+}
+
+#streakVal::after {
+    display: block;
+    position: fixed;
+    margin-top: 45px;
+    font-size: 14px;
+    content: 'Streak';
+}
+
+#myScoreVal::after {
+    display: block;
+    position: fixed;
+    margin-top: 45px;
+    font-size: 14px;
+    content: 'Score';
+}
+
+#livesDisp::after {
+    display: block;
+    position: fixed;
+    margin-top: 45px;
+    font-size: 14px;
+    content: 'Lives';
+}
+
+#killsIcon,
+#deathsIcon,
+#streakIcon {
+    display: none;
+}
+
+#livesCount .material-icons {
+    display: none;
+}
+
+#scoreCount .material-icons {
+    display: none;
+}
+
+.kfItem {
+    border-radius: 10px;
+    background-color: var(--ingame-bg-color);
+}
+
+#killStreakHolder {
+    position: fixed;
+    bottom: 75px;
+	right: 15px;
+	margin-right: 0;
+    margin-bottom: 0;
+}
+
+.killStreakItem {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+#hudClassIcon {
+    display: none;
+}
+
+#healthValueHolder {
+    background-color: transparent;
+    width: 100px;
+    height: 65px;
+    border-radius: 10px;
+    position: fixed;
+    left: 30%;
+    bottom: 25%;
+    padding: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    align-items: center;
+}
+
+#healthValue {
+    color: var(--health-color);
+    font-family: hpammo;
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+    margin-top: 0;
+    will-change: unset;
+}
+
+#maxHP {
+    display: none;
+}
+
+#challIcon {
+    display: none !important;
+}
+
+#healthBar {
+    display: none;
+}
+
+#ammoDisplay {
+    background-color: transparent;
+    letter-spacing: 2px;
+    width: 100px;
+    height: 65px;
+    border-radius: 0;
+    position: fixed;
+    right: 31%;
+    bottom: 25%;
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    transform: none;
+}
+
+#ammoVal {
+    color: var(--ammo-color);
+    font-family: hpammo;
+    font-size: 48px;
+    margin-left: 12px;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#ammoMax {
+    display: none;
+}
+
+#ammoIcon {
+    display: none;
+}
+
+#reloadMsg {
+    background: transparent !important;
+}
+
+#chatInput {
+    background-color: var(--ingame-bg-color) !important;
+    color: #fff !important;
+    font-size: 16px;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+#chatInput::placeholder {
+    color: rgba(255, 255, 255, .5) !important;
+    text-transform: var(--text-transform);
+}
+
+#chatHolder {
+    bottom: 20px !important;
+    left: 20px !important;
+    border-radius: 10px;
+    background-color: var(--ingame-bg-color);
+}
+
+.chatItem {
+    border-radius: 0;
+    background-color: transparent !important;
+}
+
+#weapDisplay {
+    display: none !important;
+}
+
+#voiceDisplay {
+    display: none;
+}
+
+#gameMessage {
+    top: 70px;
+    font-size: 18px;
+}
+
+#curGameInfo {
+    display: none;
+}
+
+.readAll {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.readAll:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+}
