@@ -1,4 +1,4 @@
-/* Updated 6 November 2020 */
+/* Updated 15 November 2020 */
 
 :root {
     --accent-color: #0670c2;
@@ -86,7 +86,11 @@ a:hover {
 }
 
 #ot-sdk-btn-floating.ot-floating-button {
-	display: none;
+	display: none !important;
+}
+
+#seasonLabel {
+    display: none !important;
 }
 
 #newsHolder {
