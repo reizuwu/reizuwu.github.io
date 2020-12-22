@@ -50,8 +50,8 @@ a:visited {
 
 .name {
 	font-size: 3em;
-	margin-top: -20px;
-	margin-bottom: -10px;
+	margin-top: -25px;
+	margin-bottom: 25px;
 }
 
 p {
@@ -67,6 +67,26 @@ p {
 
 .icons a:not(:last-of-type) {
 	margin-right: 20px;
+}
+
+#show {
+	cursor: default;
+}
+
+#show span#one {
+	display: inline-block;
+}
+  
+#show:hover span#one {
+	display: none;
+}
+  
+#show span#two {
+	display: none;
+}
+  
+#show:hover span#two {
+	display: inline-block;
 }
 
 ::placeholder {
