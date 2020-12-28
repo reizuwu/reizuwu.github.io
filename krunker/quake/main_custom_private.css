@@ -191,14 +191,22 @@
 	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
+#ingameFPS::after {
+    content: ' fps';
+    text-transform: var(--text-transform);
+}
+
 #pingText {
 	color: #fff !important;
 	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
+#pingText::after {
+    content: ' ms';
+}
+
 #pingIcon {
-	color: var(--accent-color) !important;
-	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+	display: none;
 }
 
 #pingDisplay .material-icons {
