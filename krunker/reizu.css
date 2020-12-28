@@ -1,4 +1,4 @@
-/* Updated 15 November 2020 */
+/* Updated 27 December 2020 */
 
 :root {
 	--accent-color: #dfafff;
@@ -112,6 +112,7 @@ a:hover {
 }
 
 #newsHolder {
+	display: none;
 	background-color: var(--menu-bg-color);
     border-radius: 0;
 }
@@ -451,6 +452,10 @@ a:hover {
 
 .imageButton {
 	display: none !important;
+}
+
+#editorBtnM {
+    display: none;
 }
 
 #menuRegionLabel {
