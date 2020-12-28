@@ -1,4 +1,4 @@
-/* Updated 15 November 2020 */
+/* Updated 27 December 2020 */
 
 @import url(https://use.fontawesome.com/releases/v5.13.0/css/all.css);
 
@@ -116,6 +116,7 @@ a:hover {
 }
 
 #newsHolder {
+	display: none;
 	background-color: var(--menu-bg-color);
     border-radius: 10px;
 }
@@ -371,6 +372,8 @@ content: 'CSS by reizu';
     background-color: transparent;
 }
 
+
+
 .verticalSeparator {
     background-color: transparent;
 }
@@ -459,6 +462,10 @@ content: 'CSS by reizu';
 
 .imageButton {
     display: none !important;
+}
+
+#editorBtnM {
+    display: none;
 }
 
 #menuRegionLabel {
