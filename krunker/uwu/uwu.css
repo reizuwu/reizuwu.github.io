@@ -350,7 +350,7 @@ a:hover {
 }
 
 .standout::before {
-content: 'CSS by reizu';
+    content: 'css.reizu.moe';
     font-size: 18px;
     margin-right: 22px;
     color: rgba(255, 255, 255, .5);
@@ -1174,6 +1174,15 @@ input:checked+.optCheck {
     text-transform: var(--text-transform);
     animation: none;
     -webkit-animation: none;
+}
+
+#instructions::after {
+	display: block;
+	margin-top: 10px;
+	color: red;
+	font-size: 36px;
+	text-transform: none;
+	content: 'GO TO css.reizu.moe, REMOVING ALL CSS FROM reizu.moe SOON';
 }
 
 ::-webkit-scrollbar-track {
