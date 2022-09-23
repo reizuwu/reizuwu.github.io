@@ -74,10 +74,10 @@ button:hover,
 /* Brand Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* Default (this is great for your own brand color!) */
+/* Default */
 .button.button-default {
   color: #ffffff;
-  background-color: #0085ff;
+  background-color: #92b5e7;
 }
 .button.button-default:hover,
 .button.button-default:focus {
