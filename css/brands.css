@@ -94,6 +94,16 @@ button:hover,
   filter: brightness(90%);
 }
 
+/* AniList */
+.button.button-anilist {
+  color: #ffffff;
+  background-color: #11161d;
+}
+.button.button-anilist:hover,
+.button.button-anilist:focus {
+  filter: brightness(90%);
+}
+
 /* Apple App Store */
 .button.button-appstore {
   color: #ffffff;
