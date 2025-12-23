@@ -28,6 +28,17 @@
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button .text-hover {
+    display: none;
+}
+
+.button:hover .text-default {
+    display: none;
+}
+
+.button:hover .text-hover {
+    display: inline;
+}
 
 .button,
 button {
